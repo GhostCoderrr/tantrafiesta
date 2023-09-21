@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { TbSquareRotatedFilled } from "react-icons/tb";
 
 const Navbar = () => {
@@ -5,7 +6,7 @@ const Navbar = () => {
     <nav className="hidden lg:block w-screen absolute z-50">
       <div className="navbar  text-white w-[80vw] h-24 flex justify-around m-auto items-center ">
         <a
-          href="#events"
+          href="/events"
           className="font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100"
         >
           EVENTS
@@ -14,23 +15,23 @@ const Navbar = () => {
         <TbSquareRotatedFilled className="opacity-50" />
 
         <a
-          href="#about"
+          href="/#about"
           className="font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100"
         >
           ABOUT
         </a>
 
         <TbSquareRotatedFilled className="opacity-50" />
-
-        <div className=" font-black text-4xl cursor-pointer">
-          <span className=" text-purple-800">T</span>antra
-          <span className=" text-purple-800">F</span>iesta
-        </div>
-
+        <Link href="/">
+          <div className=" font-black text-4xl cursor-pointer">
+            <span className=" text-purple-800">T</span>antra
+            <span className=" text-purple-800">F</span>iesta
+          </div>
+        </Link>
         <TbSquareRotatedFilled className="opacity-50" />
 
         <a
-          href="#speakers"
+          href="/#speakers"
           className="font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100"
         >
           SPEAKERS
@@ -39,7 +40,7 @@ const Navbar = () => {
         <TbSquareRotatedFilled className="opacity-50" />
 
         <a
-          href="#contact"
+          href="/#contact"
           className="font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100"
         >
           CONTACT

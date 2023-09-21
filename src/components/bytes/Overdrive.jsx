@@ -10,6 +10,7 @@ import { TbSquareRotatedFilled } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { Suspense } from "react";
 import Loading from "../Loading";
+import Link from "next/link";
 const Overdrive = () => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [selection, setSelection] = useState(0);
@@ -80,15 +81,13 @@ const Overdrive = () => {
           </div>
         </Suspense>
 
-        {selection == 3 && (
-          <div
-            className={`
+        <div
+          className={`
         ${selection == 2 ? "block" : "hidden"}
         absolute top-0 left-0 h-full w-full`}
-          >
-            <GunsCanvas item={<Vandal />} />
-          </div>
-        )}
+        >
+          <GunsCanvas item={<Vandal />} />
+        </div>
 
         <div className="w-full pl-2 flex flex-col items-start ">
           <OrganiserBadge text="TF Management" theme="#BD3944" />
@@ -135,14 +134,19 @@ const Overdrive = () => {
               </div>
               <div className="flex justify-start items-center cursor-pointer relative group">
                 <TbSquareRotatedFilled />
-                <motion.a
-                  whileTap={{ scale: 0.9 }}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                  className="text-3xl font-extrabold text-[#FF4B50] ml-2"
+                <Link
+                  href="https://unstop.com/competitions/overdrive-valorant-showdown-tantrafiesta-23-iiit-nagpur-760533"
+                  target="_blank"
                 >
-                  PLAY
-                </motion.a>
+                  <motion.div
+                    whileTap={{ scale: 0.9 }}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    className="text-3xl font-extrabold text-[#FF4B50] ml-2"
+                  >
+                    PLAY
+                  </motion.div>
+                </Link>
                 <div className="absolute text-[#FF4B50] z-20 top-10 hidden text-xl group-hover:block w-[300px] bg-[#101010] p-4 rounded-2xl border border-teal-200">
                   <p> Join the fray!</p>
                   <div className=" bottom-0 left-0 text-xs mb-2 flex">

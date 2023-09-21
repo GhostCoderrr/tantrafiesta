@@ -1,7 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-const EventCardLong = ({ className }) => {
+import OrganiserBadge from "./OrganiserBadge";
+import Link from "next/link";
+import { motion } from "framer-motion";
+const EventCardLong = ({ organizer, title, details, theme }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -45,12 +48,45 @@ const EventCardLong = ({ className }) => {
       style={{
         "--rotateY": `${rotation.x}deg`,
         "--rotateX": `${rotation.y}deg`,
-        "--gradientBefore": `#ffffff0f`,
-        "--gradientAfter": `#ffffffaa`,
+        "--gradientBefore": `${theme[1]}33`,
+        "--gradientAfter": `${theme[1]}aa`,
       }}
-      className="eventCard w-full h-[400px] col-span-1 md:col-span-2"
+      className="eventCard col-span-1 md:col-span-2 w-3/4 md:w-full h-[800px] md:h-[400px] "
     >
-      <div className="eventCard-content "></div>
+      <div className="eventCard-content flex flex-col md:flex-row">
+        <div className="w-full mt-4 md:mt-0 md:w-1/2 pl-2 h-full flex flex-col justify-between">
+          <div>
+            <OrganiserBadge text={organizer} theme={theme[0]} />
+            <div
+              style={{
+                "--c1": `${theme[0]}`,
+                "--c2": `${theme[1]}`,
+                "--c3": `${theme[2]}`,
+              }}
+              className="transText transBg mt-4 mb-8 font-bold text-4xl md:text-6xl "
+            >
+              {title}
+            </div>
+            <div className="tracking-wider text-xl opacity-50">{details}</div>
+          </div>
+          <Link
+            href="https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544"
+            target="_blank"
+          >
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              style={{
+                backgroundColor: `${theme[1]}`,
+              }}
+              className="w-[200px] h-[50px] mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
+            >
+              Register Now
+            </motion.div>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

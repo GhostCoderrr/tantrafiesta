@@ -5,6 +5,7 @@ import OrganiserBadge from "./OrganiserBadge";
 import { VscChromeMinimize, VscChromeClose } from "react-icons/vsc";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const GenAThon = () => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [min, setMin] = useState(false);
@@ -84,14 +85,19 @@ const GenAThon = () => {
               ML, Web Development, and App Development Hackathon!
             </div>
           </div>
-          <motion.a
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="w-[200px] h-[50px] mb-4  text-2xl  rounded-xl flex justify-center  items-center bg-[#7b1fa2] cursor-pointer"
+          <Link
+            href="https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544"
+            target="_blank"
           >
-            Register Now
-          </motion.a>
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              className="w-[200px] h-[50px] mb-4  text-2xl  rounded-xl flex justify-center  items-center bg-[#7b1fa2] cursor-pointer"
+            >
+              Register Now
+            </motion.div>
+          </Link>
         </div>
         <motion.div
           drag={true}

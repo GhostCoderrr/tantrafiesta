@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-const EventCardShort = () => {
+import OrganiserBadge from "./OrganiserBadge";
+
+const EventCardShort = ({ organizer, title, details, theme }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -45,12 +47,32 @@ const EventCardShort = () => {
       style={{
         "--rotateY": `${rotation.x}deg`,
         "--rotateX": `${-rotation.y}deg`,
-        "--gradientBefore": `#ffffff0f`,
-        "--gradientAfter": `#ffffffaa`,
+        "--gradientBefore": `${theme[1]}33`,
+        "--gradientAfter": `${theme[1]}aa`,
       }}
-      className="eventCard w-full h-[800px] md:h-[400px] row-span-1 col-span-1"
+      className="eventCard w-3/4 md:w-full h-[800px] md:h-[400px]"
     >
-      <div className="eventCard-content"></div>
+      <div className="eventCard-content p-2 relative">
+        <OrganiserBadge text={organizer} theme={theme[0]} />
+        <div
+          style={{
+            "--c1": `${theme[0]}`,
+            "--c2": `${theme[1]}`,
+            "--c3": `${theme[2]}`,
+          }}
+          className="transText whitespace-nowrap overflow-hidden transBg mt-4 mb-7 font-bold pb-1 text-4xl sm:text-6xl z-10"
+        >
+          {title}
+        </div>
+        <div className="tracking-wider text-base sm:text-lg xl:text-xl opacity-50 w-full md:w-3/4">
+          {details}
+        </div>
+        <div
+          className={`group mt-2 md:mt-4 xl:mt-8 bg-gradient-to-r from-[${theme[1]}] to-[${theme[0]}] font-bold cursor-pointer text-2xl w-0 h-0 md:w-[150px] md:h-[50px] flex justify-center items-center rounded-3xl`}
+        >
+          <p>Learn More</p>
+        </div>
+      </div>
     </div>
   );
 };

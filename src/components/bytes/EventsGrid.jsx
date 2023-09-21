@@ -84,7 +84,13 @@ const EventsGrid = () => {
           <Overdrive />
 
           <Algorithma />
-          <EventCardShort />
+          <EventCardShort
+            organizer="IoTics"
+            title="Robo-Rumble"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
+"
+            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+          />
         </div>
       </div>
     </div>

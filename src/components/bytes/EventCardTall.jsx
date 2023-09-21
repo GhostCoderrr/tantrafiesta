@@ -1,7 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-const EventCardTall = () => {
+import OrganiserBadge from "./OrganiserBadge";
+import Link from "next/link";
+import { motion } from "framer-motion";
+const EventCardTall = ({ organizer, title, details, theme }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -45,12 +48,42 @@ const EventCardTall = () => {
       style={{
         "--rotateY": `${rotation.x}deg`,
         "--rotateX": `${-rotation.y}deg`,
-        "--gradientBefore": `#ffffff0f`,
-        "--gradientAfter": `#ffffffaa`,
+        "--gradientBefore": `${theme[1]}33`,
+        "--gradientAfter": `${theme[1]}aa`,
       }}
-      className="eventCard w-full h-[800px] row-span-1 md:row-span-2"
+      className="eventCard w-3/4 md:w-full row-span-1 md:row-span-2 h-[800px] select-none"
     >
-      <div className="eventCard-content"></div>
+      <div className="eventCard-content flex flex-col justify-between">
+        <div className="w-full pl-2 flex flex-col items-start ">
+          <OrganiserBadge text={organizer} theme={theme[0]} />
+          <div
+            style={{
+              "--c1": `${theme[0]}`,
+              "--c2": `${theme[1]}`,
+              "--c3": `${theme[2]}`,
+            }}
+            className="transText transBg mt-4 mb-8 font-bold text-4xl  md:text-6xl z-10"
+          >
+            {title}
+          </div>
+          <div className="tracking-wider text-xl opacity-50 -z-10">
+            {details}
+          </div>
+        </div>
+        <Link href="www.youtube.com">
+          <motion.div
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            style={{
+              backgroundColor: `${theme[1]}`,
+            }}
+            className=" w-[150px] text-center p-2 text-xl m-2 rounded-2xl "
+          >
+            Learn More
+          </motion.div>
+        </Link>
+      </div>
     </div>
   );
 };
