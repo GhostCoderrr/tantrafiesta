@@ -6,14 +6,17 @@ import {
   FaSquareFacebook,
   FaLinkedin,
 } from "react-icons/fa6";
+import Link from "next/link";
+import Image from "next/image";
 const Footer = () => {
   return (
     <div className="w-screen h-[300px] p-8 flex flex-col md:flex-row justify-around md:justify-between items-center bg-black text-white">
       <div className="w-full md:w-1/2 flex justify-center md:justify-start items-center">
         <img src="/assets/logo.png" alt="" />
         <div className=" font-black text-4xl cursor-pointer ml-6">
-          <span className=" text-purple-800">T</span>antra
-          <span className=" text-purple-800">F</span>iesta
+          <Link href="/">
+            <Image src="/assets/logoText.png" height={300} width={300} />
+          </Link>
         </div>
       </div>
       <div className="w-full md:w-1/4 flex justify-around md:justify-around text-4xl items-center">
