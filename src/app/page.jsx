@@ -11,7 +11,7 @@ import MouseTrail from "@/components/MouseTrail";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-black">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-black text-white">
       <Hero />
       <About />
       <Events />
