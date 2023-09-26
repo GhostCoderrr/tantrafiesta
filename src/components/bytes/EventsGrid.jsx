@@ -79,17 +79,23 @@ const EventsGrid = () => {
           ref={cardsRef}
           className=" w-full  grid place-items-center md:place-items-start grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-3 gap-4"
         >
-          <GenAThon />
-
+          <Algorithma theme={["#0F971C", "#0F8019", "#0D3A11"]} />
           <Overdrive />
 
-          <Algorithma />
+          <EventCardShort
+            organizer="Dimensions"
+            title="Blender Blitz"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta."
+            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            logo="/assets/logo/dimensions_logo.svg"
+          />
           <EventCardShort
             organizer="IoTics"
-            title="Robo-Rumble"
+            title="Byte Craft"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            logo="/assets/logo/iotics_logo.svg"
           />
         </div>
       </div>

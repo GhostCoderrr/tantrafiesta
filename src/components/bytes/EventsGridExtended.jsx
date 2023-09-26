@@ -9,6 +9,9 @@ import Overdrive from "./Overdrive";
 import Algorithma from "./Algorithma";
 import { useInView } from "framer-motion";
 import EventCardTall from "./EventCardTall";
+import GPT5 from "./GPT5";
+import CodeFiesta from "./CodeFiesta";
+import RoboRumble from "./RoboRumble";
 
 const EventsGridExtended = () => {
   const cardsRef = useRef(null);
@@ -80,85 +83,88 @@ const EventsGridExtended = () => {
           ref={cardsRef}
           className=" w-full  grid place-items-center md:place-items-start grid-cols-1 grid-rows-13 md:grid-cols-2 md:grid-rows-10 gap-4"
         >
-          <GenAThon />
+          <Algorithma theme={["#0F971C", "#0F8019", "#0D3A11"]} />
 
           <Overdrive />
+          <EventCardShort
+            organizer="Dimensions"
+            title="Blender Blitz"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta."
+            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            logo="/assets/logo/dimensions_logo.svg"
+          />
 
-          <Algorithma />
           <EventCardShort
             organizer="IoTics"
-            title="Robo-Rumble"
+            title="Byte Craft"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            logo="/assets/logo/iotics_logo.svg"
           />
-
-          <EventCardLong
-            organizer="IoTics"
-            title="Robo-Rumble"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
-            theme={["#7b1fa2", "#673ab7", "#f48fb1"]}
-          />
+          <CodeFiesta theme={["#0F971C", "#0F8019", "#0D3A11"]} />
+          <RoboRumble theme={["#0F971C", "#0F8019", "#0D3A11"]} />
 
           <EventCardShort
-            organizer="IoTics"
-            title="Robo-Rumble"
+            organizer="Orator"
+            title="Rendezvous"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
+            logo="/assets/logo/orator_logo.svg"
           />
           <EventCardTall
-            organizer="IoTics"
-            title="Robo-Rumble"
+            organizer="CRISPR"
+            title="Enigma Xplore"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
+            banner="/assets/banner/ctf_banner.svg"
             theme={["#FD4556", "#BD3944", "#D62964"]}
           />
 
           <EventCardTall
-            organizer="IoTics"
-            title="Robo-Rumble"
+            organizer="Strokes"
+            title="Designathon"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
+            banner="/assets/banner/designathon_banner.svg"
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
           />
           <EventCardShort
-            organizer="IoTics"
-            title="Robo-Rumble"
+            organizer="TF Management"
+            title="Shatranj-Up"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            logo="/assets/logo/tf_logo.svg"
           />
-          <EventCardLong
-            organizer="IoTics"
-            title="Robo-Rumble"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
-            theme={["#0F971C", "#0F8019", "#0D3A11"]}
-          />
+          <GPT5 theme={["#7b1fa2", "#673ab7", "#f48fb1"]} />
 
           <EventCardShort
-            organizer="IoTics"
-            title="Robo-Rumble"
+            organizer="TF Management"
+            title="Spell Bee"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
+            logo="/assets/logo/tf_logo.svg"
           />
           <EventCardTall
-            organizer="IoTics"
-            title="Robo-Rumble"
+            organizer="Dimensions"
+            title="Sentient Strife"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
+            banner="/assets/banner/game_jam_banner.svg"
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
           />
           <EventCardShort
-            organizer="IoTics"
-            title="Robo-Rumble"
+            organizer="TF Management"
+            title="BattleFrenzy"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
             theme={["#FD4556", "#BD3944", "#D62964"]}
+            logo="/assets/logo/tf_logo.svg"
           />
+          <GenAThon />
         </div>
       </div>
     </div>

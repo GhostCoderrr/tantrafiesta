@@ -161,6 +161,11 @@ body {
   transform-style: preserve-3d;
   transform: perspective(700px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
 }
+
+.eventGimmick {
+  transform-style: preserve-3d;
+  transform: perspective(700px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+}
 .eventCard:hover::before {
   opacity: 1;
 }

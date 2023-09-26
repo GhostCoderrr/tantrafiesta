@@ -4,7 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import OrganiserBadge from "./OrganiserBadge";
 import Link from "next/link";
 import { motion } from "framer-motion";
-const EventCardTall = ({ organizer, title, details, theme }) => {
+import Gimmick from "../gimmicks/Gimmick";
+import Image from "next/image";
+const EventCardTall = ({ organizer, title, details, theme, banner }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -51,7 +53,7 @@ const EventCardTall = ({ organizer, title, details, theme }) => {
         "--gradientBefore": `${theme[1]}33`,
         "--gradientAfter": `${theme[1]}aa`,
       }}
-      className="eventCard w-3/4 md:w-full row-span-1 md:row-span-2 h-[800px] select-none"
+      className="eventCard w-3/4 md:w-full row-span-1 md:row-span-2 h-[700px] md:h-[800px] select-none"
     >
       <div className="eventCard-content flex flex-col justify-between">
         <div className="w-full pl-2 flex flex-col items-start ">
@@ -69,6 +71,9 @@ const EventCardTall = ({ organizer, title, details, theme }) => {
           <div className="tracking-wider text-xl opacity-50 -z-10">
             {details}
           </div>
+          <div className=" mt-6 h-[300px] w-full">
+            <Gimmick />
+          </div>
         </div>
         <Link href="www.youtube.com">
           <motion.div
@@ -78,11 +83,19 @@ const EventCardTall = ({ organizer, title, details, theme }) => {
             style={{
               backgroundColor: `${theme[1]}`,
             }}
-            className=" w-[150px] text-center p-2 text-xl m-2 rounded-2xl "
+            className=" w-[150px] text-center p-2 text-xl mt-[-50px] md:m-2 rounded-2xl "
           >
             Learn More
           </motion.div>
         </Link>
+        <div className="w-full flex justify-center">
+          <Image
+            className="absolute bottom-0 -z-50 opacity-90"
+            src={banner}
+            height={450}
+            width={450}
+          />
+        </div>
       </div>
     </div>
   );

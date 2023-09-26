@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import OrganiserBadge from "./OrganiserBadge";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Gimmick from "../gimmicks/Gimmick";
+import Image from "next/image";
 const EventCardLong = ({ organizer, title, details, theme }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
@@ -53,9 +55,24 @@ const EventCardLong = ({ organizer, title, details, theme }) => {
       }}
       className="eventCard col-span-1 md:col-span-2 w-3/4 md:w-full h-[800px] md:h-[400px] "
     >
-      <div className="eventCard-content flex flex-col md:flex-row">
-        <div className="w-full mt-4 md:mt-0 md:w-1/2 pl-2 h-full flex flex-col justify-between">
-          <div>
+      <div className="eventCard-content flex flex-col-reverse md:flex-row-reverse">
+        <div
+          style={{
+            "--rotateY": `${-rotation.x * 3}deg`,
+            "--rotateX": `${rotation.y * 3}deg`,
+          }}
+          className="eventGimmick w-full mt-4 md:mt-0 md:w-1/2 pl-2 h-full md:h-full "
+        >
+          <div className=" bg-transparent h-full w-full flex flex-col justify-center">
+            <Image
+              src="/assets/banner/robo_banner.svg"
+              height={400}
+              width={400}
+            />
+          </div>
+        </div>
+        <div className="w-full mt-4 md:mt-0 md:w-1/2 pl-2 h-2/3 md:h-full flex flex-col justify-between">
+          <div className="">
             <OrganiserBadge text={organizer} theme={theme[0]} />
             <div
               style={{
@@ -63,7 +80,7 @@ const EventCardLong = ({ organizer, title, details, theme }) => {
                 "--c2": `${theme[1]}`,
                 "--c3": `${theme[2]}`,
               }}
-              className="transText transBg mt-4 mb-8 font-bold text-4xl md:text-6xl "
+              className="transText transBg  mt-4 mb-8 font-bold text-4xl md:text-6xl "
             >
               {title}
             </div>
@@ -80,11 +97,14 @@ const EventCardLong = ({ organizer, title, details, theme }) => {
               style={{
                 backgroundColor: `${theme[1]}`,
               }}
-              className="w-[200px] h-[50px] mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
+              className="w-[200px] h-[50px] mt-8 md:mt-0 mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
             >
               Register Now
             </motion.div>
           </Link>
+        </div>
+        <div className="w-full h-1/2 md:w-1/2">
+          <Gimmick />
         </div>
       </div>
     </div>

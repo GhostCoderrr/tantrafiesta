@@ -78,7 +78,7 @@ const Venue = () => {
         <div className="absolute text-white z-10 text-5xl font-semibold pointer-events-none -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
           Venue
         </div>
-        <Canva className="z-[-1]" />
+        <Canva className=" hidden md:block z-[-1]" />
       </div>
       <div className="w-screen h-[60vh] lg:w-[60vw] lg:h-full  flex flex-col justify-around items-center">
         <div className="card-body hidden lg:block rounded-xl w-[90%] lg:w-[60%] h-[50%] relative">

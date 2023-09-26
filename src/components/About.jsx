@@ -15,7 +15,7 @@ const About = () => {
     // Handler to call on window resize
     function handleResize() {
       // Set window width to state
-      var marginEdit = (250 / 1200) * window.innerWidth - 125;
+      var marginEdit = (250 / 1200) * window.innerWidth - 275;
 
       setHeight(marginEdit);
     }
@@ -23,7 +23,7 @@ const About = () => {
     // Check if window is defined
     if (typeof window !== "undefined") {
       // Set initial height
-      setHeight((250 / 1200) * window.innerWidth - 125);
+      setHeight((250 / 1200) * window.innerWidth - 275);
 
       // Add event listener
       window.addEventListener("resize", handleResize);

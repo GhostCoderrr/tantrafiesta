@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { TbSquareRotatedFilled } from "react-icons/tb";
-
+import Image from "next/image";
 const Navbar = () => {
   return (
     <nav className="hidden lg:block w-screen absolute z-50">
@@ -23,10 +23,7 @@ const Navbar = () => {
 
         <TbSquareRotatedFilled className="opacity-50" />
         <Link href="/">
-          <div className=" font-black text-4xl cursor-pointer">
-            <span className=" text-purple-800">T</span>antra
-            <span className=" text-purple-800">F</span>iesta
-          </div>
+          <Image src="/assets/logoText.png" height={300} width={300} />
         </Link>
         <TbSquareRotatedFilled className="opacity-50" />
 

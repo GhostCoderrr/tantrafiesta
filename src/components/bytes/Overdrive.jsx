@@ -65,8 +65,8 @@ const Overdrive = () => {
         <Suspense fallback={<Loading />}>
           <div
             className={`
-        ${selection == 0 ? "block" : "hidden"}
-        absolute top-0 left-0 h-full w-full`}
+        ${selection == 0 ? "md:block" : ""}
+        absolute top-0 left-0 h-full w-full hidden`}
           >
             <GunsCanvas item={<Knife position={[0, -0.2, -1.75]} />} />
           </div>
@@ -74,21 +74,22 @@ const Overdrive = () => {
         <Suspense fallback={<Loading />}>
           <div
             className={`
-        ${selection == 1 ? "block" : "hidden"}
-        absolute top-0 left-0 h-full w-full`}
+        ${selection == 1 ? "md:block" : ""}
+        absolute top-0 left-0 h-full w-full hidden`}
           >
             <GunsCanvas item={<Classic />} />
           </div>
         </Suspense>
 
-        <div
-          className={`
-        ${selection == 2 ? "block" : "hidden"}
-        absolute top-0 left-0 h-full w-full`}
-        >
-          <GunsCanvas item={<Vandal />} />
-        </div>
-
+        <Suspense fallback={<Loading />}>
+          <div
+            className={`
+        ${selection == 2 ? "md:block" : ""}
+        absolute top-0 left-0 h-full w-full hidden`}
+          >
+            <GunsCanvas item={<Vandal />} />
+          </div>
+        </Suspense>
         <div className="w-full pl-2 flex flex-col items-start ">
           <OrganiserBadge text="TF Management" theme="#BD3944" />
           <div

@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import OrganiserBadge from "./OrganiserBadge";
-
-const EventCardShort = ({ organizer, title, details, theme }) => {
+import Image from "next/image";
+const EventCardShort = ({ organizer, title, details, theme, logo }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -50,8 +50,14 @@ const EventCardShort = ({ organizer, title, details, theme }) => {
         "--gradientBefore": `${theme[1]}33`,
         "--gradientAfter": `${theme[1]}aa`,
       }}
-      className="eventCard w-3/4 md:w-full h-[800px] md:h-[400px]"
+      className="eventCard w-3/4 md:w-full h-[400px]"
     >
+      <Image
+        className=" z-50 absolute h-10 w-10 md:h-20 md:w-20 top-2 right-2"
+        src={logo}
+        height={80}
+        width={80}
+      />
       <div className="eventCard-content p-2 relative">
         <OrganiserBadge text={organizer} theme={theme[0]} />
         <div
@@ -60,7 +66,7 @@ const EventCardShort = ({ organizer, title, details, theme }) => {
             "--c2": `${theme[1]}`,
             "--c3": `${theme[2]}`,
           }}
-          className="transText whitespace-nowrap overflow-hidden transBg mt-4 mb-7 font-bold pb-1 text-4xl sm:text-6xl z-10"
+          className="transText transBg whitespace-nowrap overflow-hidden mt-4 mb-7 font-bold pb-1 text-4xl sm:text-6xl z-10"
         >
           {title}
         </div>
@@ -68,7 +74,10 @@ const EventCardShort = ({ organizer, title, details, theme }) => {
           {details}
         </div>
         <div
-          className={`group mt-2 md:mt-4 xl:mt-8 bg-gradient-to-r from-[${theme[1]}] to-[${theme[0]}] font-bold cursor-pointer text-2xl w-0 h-0 md:w-[150px] md:h-[50px] flex justify-center items-center rounded-3xl`}
+          style={{
+            backgroundColor: `${theme[1]}`,
+          }}
+          className="group mt-8 font-bold cursor-pointer text-2xl w-[150px] h-[50px] flex justify-center items-center rounded-3xl"
         >
           <p>Learn More</p>
         </div>
