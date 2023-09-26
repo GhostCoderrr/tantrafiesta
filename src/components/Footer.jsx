@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <div className="w-screen h-[300px] p-8 flex flex-col md:flex-row justify-around md:justify-between items-center">
+    <div className="w-screen h-[300px] p-8 flex flex-col md:flex-row justify-around md:justify-between items-center bg-white">
       <div className="w-full md:w-1/2 flex justify-center md:justify-start items-center">
         <img src="/assets/logo.png" alt="" />
         <div className=" font-black text-4xl cursor-pointer ml-6">
