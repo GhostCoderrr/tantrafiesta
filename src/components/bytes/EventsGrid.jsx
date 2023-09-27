@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import { GoBriefcase } from "react-icons/go";
 import React, { useEffect, useRef } from "react";
 import EventCardShort from "./EventCardShort";
-import EventCardLong from "./EventCardLong";
-import GenAThon from "./GenAThon";
+import CodeFiesta from "./CodeFiesta";
 import Overdrive from "./Overdrive";
 import Algorithma from "./Algorithma";
 import { useInView } from "framer-motion";
@@ -77,26 +76,30 @@ const EventsGrid = () => {
         <div
           id="eventCards"
           ref={cardsRef}
-          className=" w-full  grid place-items-center md:place-items-start grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-3 gap-4"
+          className=" w-full  grid place-items-center md:place-items-start grid-cols-1 grid-rows-5 md:grid-cols-2 md:grid-rows-4 gap-4"
         >
-          <Algorithma theme={["#0F971C", "#0F8019", "#0D3A11"]} />
-          <Overdrive />
+          <Algorithma theme={["#ffbe0b", "#fb5607", "#fcbf49"]} />
 
+          <Overdrive />
           <EventCardShort
             organizer="Dimensions"
             title="Blender Blitz"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta."
-            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            theme={["#90e0ef", "#00b4d8", "#0077b6"]}
             logo="/assets/logo/dimensions_logo.svg"
+            textColor="#000000"
           />
+
           <EventCardShort
             organizer="IoTics"
             title="Byte Craft"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
-            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/iotics_logo.svg"
+            textColor="#000000"
           />
+          <CodeFiesta theme={["#0F971C", "#0F8019", "#0D3A11"]} />
         </div>
       </div>
     </div>

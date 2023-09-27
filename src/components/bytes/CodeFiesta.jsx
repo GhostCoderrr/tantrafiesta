@@ -100,7 +100,7 @@ const CodeFiesta = ({ theme }) => {
               CodeFiesta 2023.
             </div>
           </div>
-          <div className="flex md:flex-row flex-col justify-around items-center">
+          <div className="flex md:flex-row flex-col justify-between items-center">
             <Link
               href="https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544"
               target="_blank"
@@ -119,7 +119,7 @@ const CodeFiesta = ({ theme }) => {
             </Link>
             <Link href="https://www.geeksforgeeks.org/" target="_blank">
               <Image
-                className="z-50 mb-4 ml-2"
+                className="z-50 mb-4 ml-2 md:mr-10"
                 src="/assets/logo/gfg_logo.svg"
                 height={25}
                 width={250}

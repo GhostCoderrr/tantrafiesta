@@ -83,15 +83,16 @@ const EventsGridExtended = () => {
           ref={cardsRef}
           className=" w-full  grid place-items-center md:place-items-start grid-cols-1 grid-rows-13 md:grid-cols-2 md:grid-rows-10 gap-4"
         >
-          <Algorithma theme={["#0F971C", "#0F8019", "#0D3A11"]} />
+          <Algorithma theme={["#ffbe0b", "#fb5607", "#fcbf49"]} />
 
           <Overdrive />
           <EventCardShort
             organizer="Dimensions"
             title="Blender Blitz"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta."
-            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            theme={["#90e0ef", "#00b4d8", "#0077b6"]}
             logo="/assets/logo/dimensions_logo.svg"
+            textColor="#000000"
           />
 
           <EventCardShort
@@ -99,11 +100,12 @@ const EventsGridExtended = () => {
             title="Byte Craft"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
-            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/iotics_logo.svg"
+            textColor="#000000"
           />
           <CodeFiesta theme={["#0F971C", "#0F8019", "#0D3A11"]} />
-          <RoboRumble theme={["#0F971C", "#0F8019", "#0D3A11"]} />
+          <RoboRumble theme={["#7b1fa2", "#673ab7", "#f48fb1"]} />
 
           <EventCardShort
             organizer="Orator"
@@ -135,8 +137,9 @@ const EventsGridExtended = () => {
             title="Shatranj-Up"
             details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
 "
-            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/tf_logo.svg"
+            textColor="#000000"
           />
           <GPT5 theme={["#7b1fa2", "#673ab7", "#f48fb1"]} />
 

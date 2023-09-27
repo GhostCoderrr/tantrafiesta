@@ -3,7 +3,14 @@
 import { useState, useEffect, useRef } from "react";
 import OrganiserBadge from "./OrganiserBadge";
 import Image from "next/image";
-const EventCardShort = ({ organizer, title, details, theme, logo }) => {
+const EventCardShort = ({
+  organizer,
+  title,
+  details,
+  theme,
+  logo,
+  textColor,
+}) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -76,6 +83,7 @@ const EventCardShort = ({ organizer, title, details, theme, logo }) => {
         <div
           style={{
             backgroundColor: `${theme[1]}`,
+            color: `${textColor ? textColor : "white"}`,
           }}
           className="group mt-8 font-bold cursor-pointer text-2xl w-[150px] h-[50px] flex justify-center items-center rounded-3xl"
         >

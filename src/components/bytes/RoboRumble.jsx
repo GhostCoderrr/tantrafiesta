@@ -72,7 +72,7 @@ const RoboRumble = ({ theme }) => {
         </div>
         <div className="w-full h-2/3 md:h-full   md:w-1/2 flex flex-col justify-between">
           <div className="">
-            <OrganiserBadge text="DotSlash" theme={theme[1]} />
+            <OrganiserBadge text="IoTics" theme={theme[1]} />
             <div
               style={{
                 "--c1": `${theme[0]}`,
