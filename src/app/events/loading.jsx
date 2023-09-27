@@ -1,10 +1,7 @@
-import Hero from "@/components/Hero";
-import React from "react";
-
 const loading = () => {
   return (
-    <div className="overflow-hidden  bg-black flex min-h-screen flex-col items-center justify-between ">
-      <Hero />
+    <div className="overflow-hidden  bg-black flex min-h-screen w-screen flex-col items-center justify-center text-white text-8xl">
+      LOADING...
     </div>
   );
 };

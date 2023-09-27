@@ -104,11 +104,14 @@ const About = () => {
           <p className=" tracking-widest font-light opacity-30">
             Sponsored by leading organisations
           </p>
-          <div className="flex justify-between mt-3 items-center w-1/2">
-            <Image src="/assets/sponsor1.png" height={50} width={97} />
-            <Image src="/assets/sponsor2.png" height={50} width={143} />
-            <Image src="/assets/sponsor3.png" height={37} width={84} />
-            <Image src="/assets/sponsor4.png" height={31} width={124} />
+          <div className="flex justify-start mt-3 items-center w-1/2">
+            <Image src="/assets/logo/gfg_logo.svg" height={50} width={200} />
+            <Image
+              className="ml-4"
+              src="/assets/logo/ninjas_logo.png"
+              height={50}
+              width={143}
+            />
           </div>
         </div>
       </div>

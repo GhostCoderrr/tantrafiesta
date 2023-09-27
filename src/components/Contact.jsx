@@ -1,17 +1,51 @@
 "use client";
 import { useState } from "react";
-import { VscChromeMinimize, VscChromeClose } from "react-icons/vsc";
+
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
+
+import Link from "next/link";
+import { HiArrowRight } from "react-icons/hi";
 const Contact = () => {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState(false);
   const [mail, setMail] = useState(false);
   const [message, setMessage] = useState(false);
+  const [button, setButton] = useState(false);
+  const [nameData, setNameData] = useState("");
+  const [mailData, setMailData] = useState("");
+  const [messageData, setMessageData] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Sending");
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: nameData,
+        email: mailData,
+        message: messageData,
+      }),
+    }).then((res) => {
+      if (res.status === 200) {
+        setSubmitted(true);
+        setName("");
+        setMail("");
+        setMessage("");
+      }
+    });
+  };
+
   //function to remove cursor
   const hideCursor = (classname) => {
     const cursor = document.querySelector(classname.toString());
-    console.log(cursor);
+
     cursor.style.display = "none";
   };
 
@@ -34,26 +68,65 @@ const Contact = () => {
         >
           <div className="code w-full mx-2 border border-white/20 bg-[#151515] h-[600px]  relative  rounded-xl">
             <div className="absolute font-light font-mono  p-4 top-0 left-0 h-full w-full text-base md:text-xl">
-              <Typewriter
-                className=" opacity-50"
-                options={{
-                  delay: 15,
-                  cursor: "|",
-                  cursorClassName: "intro_cursor",
-                }}
-                onInit={(typewriter) => {
-                  typewriter
-                    .pauseFor(2500)
-                    .typeString(
-                      "Hello there!<br>I'll be taking your query<br><br>"
-                    )
+              {submitted && (
+                <>
+                  <div className="mt-8 text-green-600 font-extrabold opacity-100">
+                    <Typewriter
+                      className=" opacity-50"
+                      options={{
+                        delay: 30,
+                        cursor: "|",
+                        cursorClassName: "intro_cursor",
+                      }}
+                      onInit={(typewriter) => {
+                        typewriter
+                          .pauseFor(1000)
+                          .typeString(
+                            "Yay!<br>Your query has been submitted!<br>We'll get back to you as soon as possible<br><br>Check out our Events' List till then!<br>."
+                          )
+                          .pauseFor(500)
+                          .typeString("<br>.")
+                          .pauseFor(500)
+                          .typeString("<br>.<br>.<br>")
+                          .pauseFor(1000)
+                          .callFunction(() => hideCursor(".intro_cursor"))
+                          .callFunction(() => setButton(true))
+                          .start();
+                      }}
+                    />
+                  </div>
+                  {button && (
+                    <Link
+                      className="mt-8 text-green-600 font-extrabold text-5xl opacity-100"
+                      href="/events"
+                    >
+                      Events -{`>`}
+                    </Link>
+                  )}
+                </>
+              )}
+              {!submitted && (
+                <Typewriter
+                  className=" opacity-50"
+                  options={{
+                    delay: 15,
+                    cursor: "|",
+                    cursorClassName: "intro_cursor",
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(2500)
+                      .typeString(
+                        "Hello there!<br>I'll be taking your query<br><br>"
+                      )
 
-                    .pauseFor(1500)
-                    .callFunction(() => hideCursor(".intro_cursor"))
-                    .callFunction(() => setName(true))
-                    .start();
-                }}
-              />
+                      .pauseFor(1500)
+                      .callFunction(() => hideCursor(".intro_cursor"))
+                      .callFunction(() => setName(true))
+                      .start();
+                  }}
+                />
+              )}
               {name && (
                 <form>
                   <div className="mt-8 text-green-600 font-extrabold opacity-100">
@@ -77,15 +150,17 @@ const Contact = () => {
                       type="text"
                       name="name"
                       autoComplete="off"
-                      autoCorrect="off"
-                      className="w-1/2 rounded-lg border border-white/5 bg-transparent text-white"
+                      className="w-1/2 rounded-lg border border-white/10 px-2 bg-transparent text-white"
+                      onChange={(e) => setNameData(e.target.value)}
                       onKeyDown={(e) => {
                         if (e.key == "Enter") {
+                          e.preventDefault();
                           setMail(true);
                         }
                       }}
                     />
                   </div>
+
                   {mail && (
                     <div className="mt-8 text-green-600 font-extrabold opacity-100">
                       <Typewriter
@@ -109,9 +184,11 @@ const Contact = () => {
                         name="email"
                         autoComplete="off"
                         autoCorrect="off"
-                        className="w-1/2 rounded-lg border border-white/5 bg-transparent text-white"
+                        className="w-1/2 rounded-lg border border-white/10 px-2 bg-transparent text-white"
+                        onChange={(e) => setMailData(e.target.value)}
                         onKeyDown={(e) => {
                           if (e.key == "Enter") {
+                            e.preventDefault();
                             setMessage(true);
                           }
                         }}
@@ -141,16 +218,20 @@ const Contact = () => {
                         name="message"
                         autoComplete="off"
                         autoCorrect="off"
-                        className="w-1/2 rounded-lg border h-[150px] border-white/5 bg-transparent text-white"
+                        className="w-1/2 rounded-lg border h-[150px] border-white/10 px-2 bg-transparent text-white no-scrollbar"
+                        onChange={(e) => setMessageData(e.target.value)}
                         // onKeyDown={(e) => {
                         //   if (e.key == "Enter") {
+                        //     e.preventDefault();
                         //     setMessage(true);
                         //   }
                         // }}
                       />
                       <br></br>
                       <br></br>
-                      <button type="submit">Submit</button>
+                      <button type="submit" onClick={(e) => handleSubmit(e)}>
+                        Submit
+                      </button>
                     </div>
                   )}
                 </form>

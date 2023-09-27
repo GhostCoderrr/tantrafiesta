@@ -19,7 +19,7 @@ const Algorithmia = ({ theme }) => {
   //function to remove cursor
   const hideCursor = () => {
     const cursor = document.querySelector(".custom_cursor");
-    console.log(cursor);
+
     cursor.style.opacity = 0;
   };
   const handleOnMove = (e) => {
