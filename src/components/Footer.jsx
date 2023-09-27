@@ -12,10 +12,10 @@ const Footer = () => {
   return (
     <div className="w-screen h-[300px] p-8 flex flex-col md:flex-row justify-around md:justify-between items-center bg-black text-white">
       <div className="w-full md:w-1/2 flex justify-center md:justify-start items-center">
-        <img src="/assets/logo.png" alt="" />
+        <Image src="/assets/logo.png" height={75} width={75} alt="" />
         <div className=" font-black text-4xl cursor-pointer ml-6">
           <Link href="/">
-            <Image src="/assets/logoText.png" height={300} width={300} />
+            <Image src="/assets/logoText.png" height={300} width={300} alt="" />
           </Link>
         </div>
       </div>

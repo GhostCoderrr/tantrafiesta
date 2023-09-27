@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 
 import Link from "next/link";
-import { HiArrowRight } from "react-icons/hi";
+
 const Contact = () => {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState(false);
@@ -33,7 +33,9 @@ const Contact = () => {
         message: messageData,
       }),
     }).then((res) => {
+      console.log("SENT");
       if (res.status === 200) {
+        console.log("SUCCES");
         setSubmitted(true);
         setName("");
         setMail("");

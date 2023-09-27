@@ -7,7 +7,6 @@ import Speakers from "@/components/Speakers";
 
 import Venue from "@/components/Venue";
 import Contact from "@/components/Contact";
-import MouseTrail from "@/components/MouseTrail";
 
 export default function Home() {
   return (
