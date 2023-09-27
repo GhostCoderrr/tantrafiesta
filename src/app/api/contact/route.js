@@ -13,6 +13,17 @@ export const POST = async (req) => {
     secure: true,
   });
 
+  await new Promise((resolve, reject) => {
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log("Server is ready to take our messages");
+        resolve(success);
+      }
+    });
+  });
   const mailData = {
     from: "tantrafiestadummymailer@gmail.com",
     to: "jayvardhanpatil7811@gmail.com",
@@ -21,10 +32,20 @@ export const POST = async (req) => {
     html: `<div>${message}</div><p>Sent from:
     ${email}</p>`,
   };
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+  // transporter.sendMail(mailData, function (err, info) {
+  //   if (err) console.log(err);
+  //   else console.log(info);
+  // });
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) {
+        console.log(err);
+        reject(err);
+      } else {
+        console.log(info);
+        resolve(info);
+      }
+    });
   });
-
   return new Response({ status: 200 });
 };
