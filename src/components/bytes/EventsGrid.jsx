@@ -88,6 +88,7 @@ const EventsGrid = () => {
             theme={["#90e0ef", "#00b4d8", "#0077b6"]}
             logo="/assets/logo/dimensions_logo.svg"
             textColor="#000000"
+            url="/events/blender"
           />
 
           <EventCardShort
@@ -98,6 +99,7 @@ const EventsGrid = () => {
             theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/iotics_logo.svg"
             textColor="#000000"
+            url="/events/byte"
           />
           <CodeFiesta theme={["#0F971C", "#0F8019", "#0D3A11"]} />
         </div>
