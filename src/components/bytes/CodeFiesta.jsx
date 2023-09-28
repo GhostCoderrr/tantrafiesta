@@ -101,10 +101,7 @@ const CodeFiesta = ({ theme }) => {
             </div>
           </div>
           <div className="flex md:flex-row flex-col justify-between items-center">
-            <Link
-              href="https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544"
-              target="_blank"
-            >
+            <Link href="/events/codefiesta" target="_blank">
               <motion.div
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.1 }}
@@ -114,7 +111,7 @@ const CodeFiesta = ({ theme }) => {
                 }}
                 className="w-[200px] h-[50px] mt-8 md:mt-0 mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
               >
-                Register Now
+                Learn More
               </motion.div>
             </Link>
             <Link href="https://www.geeksforgeeks.org/" target="_blank">

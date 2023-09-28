@@ -6,6 +6,7 @@ import { FiCode } from "react-icons/fi";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "framer-motion";
+import Link from "next/link";
 const About = () => {
   const divRef = useRef(null);
   const isInView = useInView(divRef);
@@ -15,7 +16,7 @@ const About = () => {
     // Handler to call on window resize
     function handleResize() {
       // Set window width to state
-      var marginEdit = (250 / 1200) * window.innerWidth - 275;
+      var marginEdit = (250 / 1200) * window.innerWidth - 125;
 
       setHeight(marginEdit);
     }
@@ -23,7 +24,7 @@ const About = () => {
     // Check if window is defined
     if (typeof window !== "undefined") {
       // Set initial height
-      setHeight((250 / 1200) * window.innerWidth - 275);
+      setHeight((250 / 1200) * window.innerWidth - 125);
 
       // Add event listener
       window.addEventListener("resize", handleResize);
@@ -84,6 +85,9 @@ const About = () => {
         </div>
       </div>
       <div className="w-full">
+        {/* <div className="mb-8 opacity-90 w-[150px]  lg:w-[200px]">
+          <Image src="/assets/logo/sbi_logo.svg" width={200} height={200} />
+        </div> */}
         <Tag text="About" icon={<HiArrowRight />} />
         <div className="text-5xl sm:text-7xl font-semibold mt-16 mb-10">
           TantraFiest is
@@ -92,26 +96,55 @@ const About = () => {
           the annual science and technology festival of the Indian Institute of
           Information Technology, Nagpur.
         </div>
-        <motion.a
-          whileTap={{ scale: 0.9 }}
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          className="w-[200px] h-[50px] sm:w-[300px] sm:h-[70px] mb-16 text-3xl sm:text-5xl rounded-xl flex justify-center  items-center bg-[#BE30D5] cursor-pointer"
-        >
-          Get Started
-        </motion.a>
+        <Link href="/events">
+          <motion.div
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            className="w-[200px] h-[50px] sm:w-[300px] sm:h-[70px] mb-16 text-3xl sm:text-5xl rounded-xl flex justify-center  items-center bg-[#BE30D5] cursor-pointer"
+          >
+            Get Started
+          </motion.div>
+        </Link>
         <div>
           <p className=" tracking-widest font-light opacity-30">
             Sponsored by leading organisations
           </p>
-          <div className="flex justify-start mt-3 items-center w-1/2">
-            <Image src="/assets/logo/gfg_logo.svg" height={50} width={200} />
-            <Image
-              className="ml-4"
-              src="/assets/logo/ninjas_logo.png"
-              height={50}
-              width={143}
-            />
+          <div className="flex lg:flex-row flex-col justify-start mt-3 items-start lg:items-center w-1/2">
+            <div className="w-full  min-w-[400px] flex justify-start mt-3 items-center">
+              <Image
+                src="/assets/logo/tsecond_logo.svg"
+                height={50}
+                width={143}
+              />
+              <Image
+                className="ml-4"
+                src="/assets/logo/gfg_logo.svg"
+                height={50}
+                width={250}
+              />
+            </div>
+            <div className="w-full min-w-[300px] flex justify-start mt-3 items-center">
+              <Image
+                className="ml-0 lg:ml-4"
+                src="/assets/logo/ninjas_logo.png"
+                height={50}
+                width={120}
+              />
+
+              <Image
+                className="ml-4"
+                src="/assets/logo/ntpc_logo.svg"
+                height={50}
+                width={75}
+              />
+              <Image
+                className="ml-4"
+                src="/assets/logo/koed_logo.svg"
+                height={50}
+                width={50}
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -135,10 +135,7 @@ const Overdrive = () => {
               </div>
               <div className="flex justify-start items-center cursor-pointer relative group">
                 <TbSquareRotatedFilled />
-                <Link
-                  href="https://unstop.com/competitions/overdrive-valorant-showdown-tantrafiesta-23-iiit-nagpur-760533"
-                  target="_blank"
-                >
+                <Link href="/events/overdrive" target="_blank">
                   <motion.div
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.1 }}

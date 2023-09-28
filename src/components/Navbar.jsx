@@ -3,7 +3,7 @@ import { TbSquareRotatedFilled } from "react-icons/tb";
 import Image from "next/image";
 const Navbar = () => {
   return (
-    <nav className=" w-screen absolute z-50">
+    <nav className=" w-screen absolute z-50 backdrop-blur-sm">
       <div className="navbar  text-white w-[80vw] h-24 flex justify-around m-auto items-center ">
         <a
           href="/events"

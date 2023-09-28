@@ -12,7 +12,7 @@ import EventCardTall from "./EventCardTall";
 import GPT5 from "./GPT5";
 import CodeFiesta from "./CodeFiesta";
 import RoboRumble from "./RoboRumble";
-
+import Innov from "./Innov";
 const EventsGridExtended = () => {
   const cardsRef = useRef(null);
   const divRef = useRef(null);
@@ -93,6 +93,7 @@ const EventsGridExtended = () => {
             theme={["#90e0ef", "#00b4d8", "#0077b6"]}
             logo="/assets/logo/dimensions_logo.svg"
             textColor="#000000"
+            url="/events/blender"
           />
 
           <EventCardShort
@@ -103,6 +104,7 @@ const EventsGridExtended = () => {
             theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/iotics_logo.svg"
             textColor="#000000"
+            url="/events/byte"
           />
           <CodeFiesta theme={["#0F971C", "#0F8019", "#0D3A11"]} />
           <RoboRumble theme={["#7b1fa2", "#673ab7", "#f48fb1"]} />
@@ -114,6 +116,7 @@ const EventsGridExtended = () => {
 "
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
             logo="/assets/logo/orator_logo.svg"
+            url="/events/rendezvous"
           />
           <EventCardTall
             organizer="CRISPR"
@@ -122,6 +125,7 @@ const EventsGridExtended = () => {
 "
             banner="/assets/banner/ctf_banner.svg"
             theme={["#FD4556", "#BD3944", "#D62964"]}
+            url="/events/enigma"
           />
 
           <EventCardTall
@@ -131,6 +135,7 @@ const EventsGridExtended = () => {
 "
             banner="/assets/banner/designathon_banner.svg"
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            url="/events/designathon"
           />
           <EventCardShort
             organizer="TF Management"
@@ -140,6 +145,7 @@ const EventsGridExtended = () => {
             theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/tf_logo.svg"
             textColor="#000000"
+            url="/events/chess"
           />
           <GPT5 theme={["#7b1fa2", "#673ab7", "#f48fb1"]} />
 
@@ -150,6 +156,7 @@ const EventsGridExtended = () => {
 "
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
             logo="/assets/logo/tf_logo.svg"
+            url="/events/spellbee"
           />
           <EventCardTall
             organizer="Dimensions"
@@ -158,6 +165,7 @@ const EventsGridExtended = () => {
 "
             banner="/assets/banner/game_jam_banner.svg"
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            url="/events/sentient"
           />
           <EventCardShort
             organizer="TF Management"
@@ -166,8 +174,66 @@ const EventsGridExtended = () => {
 "
             theme={["#FD4556", "#BD3944", "#D62964"]}
             logo="/assets/logo/tf_logo.svg"
+            url="/events/battlefrenzy"
           />
           <GenAThon />
+          <EventCardTall
+            organizer="TF Management"
+            title="Treasure Hunt"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
+"
+            banner="/assets/banner/th_banner.png"
+            theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
+            url="/events/treasurehunt"
+          />
+          <EventCardShort
+            organizer="Probe"
+            title="OpenAI"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
+"
+            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            logo="/assets/logo/probe_logo.svg"
+            url="/events/openai"
+          />
+          <EventCardShort
+            organizer="Probe"
+            title="Photography"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
+"
+            theme={["#90e0ef", "#00b4d8", "#0077b6"]}
+            textColor="#000000"
+            logo="/assets/logo/probe_logo.svg"
+            url="/events/photography"
+          />
+          <Innov theme={["#7b1fa2", "#673ab7", "#f48fb1"]} />
+          <EventCardShort
+            organizer="Probe"
+            title="Reel Making"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
+"
+            theme={["#FD4556", "#BD3944", "#D62964"]}
+            logo="/assets/logo/probe_logo.svg"
+            url="/events/reel"
+          />
+          <EventCardTall
+            organizer="Dimensions"
+            title="VR Exhibition"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
+"
+            banner="/assets/banner/vr_banner.svg"
+            theme={["#AAAAAA", "#FFFFFF", "#555555"]}
+            textColor="#000000"
+            url="/events/vr"
+          />
+          <EventCardShort
+            organizer="TF Management"
+            title="Quiz Showdown"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
+"
+            theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
+            logo="/assets/logo/tf_logo.svg"
+            url="/events/quiz"
+          />
         </div>
       </div>
     </div>

@@ -89,10 +89,7 @@ const RoboRumble = ({ theme }) => {
               RoboRumble 2023.
             </div>
           </div>
-          <Link
-            href="https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544"
-            target="_blank"
-          >
+          <Link href="/events/roborumble" target="_blank">
             <motion.div
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.1 }}
@@ -102,7 +99,7 @@ const RoboRumble = ({ theme }) => {
               }}
               className="w-[200px] h-[50px] mt-8 md:mt-0 mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
             >
-              Register Now
+              Learn Now
             </motion.div>
           </Link>
         </div>

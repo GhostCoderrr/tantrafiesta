@@ -101,19 +101,29 @@ const GenAThon = () => {
               ML, Web Development, and App Development Hackathon!
             </div>
           </div>
-          <Link
-            href="https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544"
-            target="_blank"
-          >
-            <motion.div
-              whileTap={{ scale: 0.9 }}
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="w-[200px] h-[50px] mb-4  text-2xl  rounded-xl flex justify-center  items-center bg-[#7b1fa2] cursor-pointer"
-            >
-              Register Now
-            </motion.div>
-          </Link>
+          <div className="flex md:flex-row flex-col justify-between items-center">
+            <Link href="/events/genathon" target="_blank">
+              <motion.div
+                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                style={{
+                  backgroundColor: "#7b1fa2",
+                }}
+                className="w-[200px] h-[50px] mt-8 md:mt-0 mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
+              >
+                Learn Now
+              </motion.div>
+            </Link>
+            <Link href="https://www.koed.in/" target="_blank">
+              <Image
+                className="z-50 mb-4 ml-2 md:mr-10"
+                src="/assets/logo/koed_logo.svg"
+                height={70}
+                width={70}
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

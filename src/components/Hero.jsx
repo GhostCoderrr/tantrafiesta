@@ -182,7 +182,7 @@ const Hero = () => {
     },
   };
   return (
-    <div>
+    <div className="">
       {/* <motion.div
         className="cursor flex justify-center items-center text-xl text-black"
         style={{
@@ -1032,7 +1032,7 @@ const Hero = () => {
               <circle id="Ellipse 1" cx="45" cy="1067" r="5" fill="#D9D9D9" />
               <circle id="Ellipse 2" cx="252" cy="994" r="5" fill="#D9D9D9" />
             </g>
-            <motion.g
+            {/* <motion.g
               initial={{ fillOpacity: 0 }}
               variants={sbiVariants}
               animate="visible"
@@ -1062,7 +1062,7 @@ const Hero = () => {
                   />
                 </g>
               </g>
-            </motion.g>
+            </motion.g> */}
           </g>
           <defs>
             <motion.linearGradient

@@ -16,7 +16,7 @@ const FindMore = () => {
   };
   return (
     <div ref={divRef} className="flex w-screen lg:w-[75vw] ">
-      <div className="absolute -z-10 w-[100vw]  lg:w-[75vw]    flex justify-center items-center">
+      <div className="absolute z-0 w-[100vw]  lg:w-[75vw] bg-transparent  flex justify-center items-center">
         <svg
           viewBox="0 0 430 348"
           fill="none"
@@ -607,7 +607,7 @@ const FindMore = () => {
           </defs>
         </svg>
       </div>
-      <div className="w-[8%] text-3xl flex justify-center relative">
+      <div className="w-[8%] z-10 bg-transparent text-3xl flex justify-center relative">
         <div className="flex flex-col  items-center absolute h-full">
           <motion.div
             style={{
@@ -769,7 +769,7 @@ const FindMore = () => {
           </svg>
         </div>
       </div>
-      <div className="w-full pl-[50px] mb-32">
+      <div className="w-full z-10 pl-[50px] mb-32">
         <div className="mt-[125px] max-w-[140px] h-[35px] cursor-pointer rounded-full border-[#A418BA] border text-[#A418BA] hover:border-white hover:bg-[#A418BA] hover:text-white  flex justify-center items-center">
           Interested ?
         </div>

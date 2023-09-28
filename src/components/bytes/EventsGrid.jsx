@@ -39,7 +39,7 @@ const EventsGrid = () => {
   }, []);
 
   return (
-    <div ref={divRef} className="flex w-screen lg:w-[75vw]  mt-4 relative">
+    <div ref={divRef} className="flex w-screen lg:w-[75vw]  mt-4 relative ">
       <div className="w-[8%] text-3xl flex justify-center relative">
         <div className="flex flex-col  items-center absolute h-full">
           <div className="relative text-green-200">

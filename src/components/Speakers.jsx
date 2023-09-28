@@ -11,7 +11,11 @@ const Speakers = () => {
   const divRef = useRef(null);
   const isInView = useInView(divRef);
   return (
-    <div id="speakers" ref={divRef} className="flex w-screen lg:w-[75vw] mt-4 ">
+    <div
+      id="speakers"
+      ref={divRef}
+      className="flex z-10 w-screen lg:w-[75vw] mt-4 "
+    >
       <div className="w-[8%] text-3xl flex justify-center relative ">
         <div className="flex flex-col  items-center absolute h-full">
           <div className="relative text-pink-200">

@@ -26,7 +26,7 @@ export const POST = async (req) => {
   });
   const mailData = {
     from: "tantrafiestadummymailer@gmail.com",
-    to: "jayvardhanpatil7811@gmail.com",
+    to: "tantrafiesta@iiitn.ac.in",
     subject: `TantraFiesta Query Form: Query From ${name}`,
     text: message + " | Sent from: " + email,
     html: `<div>${message}</div><p>Sent from:

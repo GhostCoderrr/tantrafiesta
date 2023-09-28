@@ -6,7 +6,15 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Gimmick from "../gimmicks/Gimmick";
 import Image from "next/image";
-const EventCardTall = ({ organizer, title, details, theme, banner }) => {
+const EventCardTall = ({
+  organizer,
+  title,
+  details,
+  theme,
+  banner,
+  textColor,
+  url,
+}) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -75,13 +83,14 @@ const EventCardTall = ({ organizer, title, details, theme, banner }) => {
             <Gimmick />
           </div>
         </div>
-        <Link href="www.youtube.com">
+        <Link href={url} target="_blank">
           <motion.div
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
             style={{
               backgroundColor: `${theme[1]}`,
+              color: `${textColor ? textColor : "white"}`,
             }}
             className=" w-[150px] text-center p-2 text-xl mt-[-50px] md:m-2 rounded-2xl "
           >

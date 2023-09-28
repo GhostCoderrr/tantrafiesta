@@ -15,10 +15,12 @@ const Contact = () => {
   const [nameData, setNameData] = useState("");
   const [mailData, setMailData] = useState("");
   const [messageData, setMessageData] = useState("");
+  const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSubmitting(true);
     console.log("Sending");
 
     fetch("/api/contact", {
@@ -52,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-[90vw] mx-8 lg:w-[75vw] border border-white/20   rounded-3xl p-4 flex flex-col justify-center items-center">
+    <div className="w-[90vw] mx-8 lg:w-[75vw] border border-white/20 bg-transparent  rounded-3xl p-4 flex flex-col justify-center items-center">
       <motion.div
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -102,7 +104,21 @@ const Contact = () => {
                       className="mt-8 text-green-600 font-extrabold text-5xl opacity-100"
                       href="/events"
                     >
-                      Events -{`>`}
+                      <Typewriter
+                        options={{
+                          delay: 30,
+                          cursor: "|",
+                          cursorClassName: "query_cursor",
+                        }}
+                        onInit={(typewriter) => {
+                          typewriter
+
+                            .typeString(">>> Events ->")
+                            .callFunction(() => hideCursor(".query_cursor"))
+
+                            .start();
+                        }}
+                      />
                     </Link>
                   )}
                 </>
@@ -231,9 +247,24 @@ const Contact = () => {
                       />
                       <br></br>
                       <br></br>
-                      <button type="submit" onClick={(e) => handleSubmit(e)}>
-                        Submit
-                      </button>
+                      {submitting ? (
+                        <div className="flex">
+                          <Typewriter
+                            options={{
+                              delay: 15,
+                              cursor: "|",
+                              deleteSpeed: 0.001,
+                            }}
+                            onInit={(typewriter) => {
+                              typewriter.typeString("Submitting...").start();
+                            }}
+                          />
+                        </div>
+                      ) : (
+                        <button type="submit" onClick={(e) => handleSubmit(e)}>
+                          Submit
+                        </button>
+                      )}
                     </div>
                   )}
                 </form>
