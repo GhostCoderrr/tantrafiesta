@@ -69,6 +69,7 @@ const SpeakerCard = ({ name, details, link, image }) => {
         <div className="text-2xl">{name}</div>
         <Link
           href={link}
+          target="_blank"
           className="text-3xl hover:text-blue-800 cursor-pointer flex items-center"
         >
           <FaLinkedin />
