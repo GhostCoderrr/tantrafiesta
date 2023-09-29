@@ -137,7 +137,7 @@ const About = () => {
 
               <Image
                 className="ml-4"
-                src="/assets/logo/ntpc_logo.svg"
+                src="/assets/logo/ntpc_logo.png"
                 height={50}
                 width={75}
               />
