@@ -84,7 +84,7 @@ const EventsGrid = () => {
           <EventCardShort
             organizer="Dimensions"
             title="Blender Blitz"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta."
+            details="Step into the mesmerizing world of CG Animation and let your creativity soar! It's a canvas for you to showcase your artistic skills like never before."
             theme={["#90e0ef", "#00b4d8", "#0077b6"]}
             logo="/assets/logo/dimensions_logo.svg"
             textColor="#000000"
@@ -94,8 +94,7 @@ const EventsGrid = () => {
           <EventCardShort
             organizer="IoTics"
             title="Byte Craft"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Unlock the future of technology at IOTICS – ByteCraft!  ByteCraft challenges you to integrate hardware and software using the latest advancements in AI and IoT technologies"
             theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/iotics_logo.svg"
             textColor="#000000"

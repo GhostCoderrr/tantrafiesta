@@ -92,7 +92,7 @@ const EventCardTall = ({
               backgroundColor: `${theme[1]}`,
               color: `${textColor ? textColor : "white"}`,
             }}
-            className=" w-[150px] text-center p-2 text-xl mt-[-50px] md:m-2 rounded-2xl "
+            className=" w-[150px] text-center p-2 text-xl mt-[-200px] md:m-2 rounded-2xl "
           >
             Learn More
           </motion.div>

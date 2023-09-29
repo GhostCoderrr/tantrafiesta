@@ -13,7 +13,7 @@ const page = () => {
   const rewards =
     "Rewards And Prizes<br>Winner-7,500<br>Participation Certificate-Prize in kind";
   const data = [
-    ["Registration Starts”,” 10 September"],
+    ["Registration Starts", "10 September"],
     ["Registration Ends", " 05 October"],
     ["Submission Round Starts", "10 September"],
     ["Submission Round Ends", "05 October"],

@@ -94,7 +94,7 @@ const EventCardShort = ({
               backgroundColor: `${theme[1]}`,
               color: `${textColor ? textColor : "white"}`,
             }}
-            className="group mt-8 font-bold cursor-pointer text-2xl w-[150px] h-[50px] flex justify-center items-center rounded-xl"
+            className="w-[150px] text-center p-2 text-xl  md:m-2 rounded-2xl "
           >
             <p>Learn More</p>
           </motion.div>

@@ -4,7 +4,7 @@ const TitleCard = ({ title, theme, children, height }) => {
       style={{
         "--gradientBefore": `${theme[1]}33`,
         "--gradientAfter": `${theme[1]}aa`,
-        height: height ? height : "450px",
+        height: height ? height : "500px",
       }}
       className="eventCard   text-black"
     >
@@ -18,7 +18,7 @@ const TitleCard = ({ title, theme, children, height }) => {
             "--c2": `${theme[1]}`,
             "--c3": `${theme[2]}`,
           }}
-          className="transText transBg whitespace-nowrap overflow-hidden mt-4 mb-7 font-bold pb-1 text-3xl xl:text-5xl  z-10"
+          className="transText transBg whitespace-nowrap overflow-hidden mt-4 mb-7 font-bold pb-1 text-3xl xl:text-4xl  z-10"
         >
           {title}
         </div>

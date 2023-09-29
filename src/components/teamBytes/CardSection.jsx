@@ -51,7 +51,7 @@ const CardSection = ({ children, start, end }) => {
       ref={scrollRef}
       className="w-[360px] lg:w-[30vw] lg:h-screen flex justify-center  overflow-y-scroll no-scrollbar "
     >
-      <div className="scrollDiv h-full lg:h-[200vh] w-full px-4 mt-2 lg:mt-56 lg:mb-56">
+      <div className="scrollDiv h-full lg:h-[250vh] w-full px-4 mt-2 lg:mt-56 lg:mb-56">
         <div
           id="eventCards"
           ref={cardsRef}

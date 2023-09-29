@@ -62,7 +62,7 @@ const GPT5 = ({ theme }) => {
               "--rotateY": `${-rotation.x * 7}deg`,
               "--rotateX": `${rotation.y * 3}deg`,
             }}
-            className=" eventGimmick absolute top-0 left-0 z-50 bg-transparent h-full w-full flex flex-col justify-center items-center mb-5 "
+            className=" eventGimmick absolute top-0 left-0 z-10 bg-transparent h-full w-full flex flex-col justify-center items-center mb-5 "
           >
             <Image
               src="/assets/banner/gpt5_banner.png"
@@ -78,7 +78,7 @@ const GPT5 = ({ theme }) => {
             />
           </div>
         </div>
-        <div className="w-full h-1/2 md:h-full   md:w-1/2 flex flex-col justify-between">
+        <div className="w-full z-50 h-1/2 md:h-full   md:w-1/2 flex flex-col justify-between">
           <div className="">
             <OrganiserBadge text="CRISPER" theme="#7b1fa2" />
             <div
@@ -105,7 +105,7 @@ const GPT5 = ({ theme }) => {
               style={{
                 backgroundColor: `${theme[0]}`,
               }}
-              className="w-[200px] h-[50px] mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
+              className="w-[200px]  h-[50px] mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
             >
               Learn More
             </motion.div>
