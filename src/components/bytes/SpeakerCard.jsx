@@ -2,12 +2,14 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { FaLinkedin } from "react-icons/fa6";
+import Link from "next/link";
 const chars = "0101";
 
 const randomChar = () => chars[Math.floor(Math.random() * (chars.length - 1))];
 const randomString = (length) => [...Array(length)].map(randomChar).join("");
 
-const SpeakerCard = ({ name, details, image }) => {
+const SpeakerCard = ({ name, details, link, image }) => {
   const [letters, setLetters] = useState("");
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
@@ -49,7 +51,7 @@ const SpeakerCard = ({ name, details, image }) => {
           ref={cardRef}
         >
           <div className="card_image flex justify-center items-center z-10  relative">
-            <img className="w-[300px]" src={image} />
+            <img className="w-[200px] rounded-full" src={image} />
           </div>
           <div className="card-gradient"></div>
           <div
@@ -64,8 +66,14 @@ const SpeakerCard = ({ name, details, image }) => {
         </div>
       </div>
       <div className="h-1/4 w-full flex flex-col p-5 justify-center">
-        <div>{name}</div>
-        <div>{details}</div>
+        <div className="text-2xl">{name}</div>
+        <Link
+          href={link}
+          className="text-3xl hover:text-blue-800 cursor-pointer flex items-center"
+        >
+          <FaLinkedin />
+          <p className="text-xl ml-2">{details}</p>
+        </Link>
       </div>
     </div>
   );

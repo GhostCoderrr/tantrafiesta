@@ -35,18 +35,14 @@ const page = () => {
         </div>
       </div>
 
-      <CardSection start={1500} end={50}>
-        <TitleCard title="Web Dev" theme={["#90e0ef", "#00b4d8", "#0077b6"]}>
-          <LeadSlate name="Jayvardhan Patil" />
-          <CoLeadSlate name="Aryan Singh" />
-          <CoLeadSlate name="Kunal Sharma" />
-        </TitleCard>
-        <TitleCard title="Marketing" theme={["#AAAAAA", "#FFFFFF", "#555555"]}>
-          <LeadSlate name="Anjalika" />
-          <CoLeadSlate name="Vaibhav Taywade " />
-          <CoLeadSlate name="Akhil Daver" />
-          <CoLeadSlate name="Yeshwant " />
-          <CoLeadSlate name="Sankeerth Kankati" />
+      <CardSection start={0} end={1570}>
+        <TitleCard
+          title="Hospitality"
+          theme={["#0F971C", "#0F8019", "#0D3A11"]}
+        >
+          <LeadSlate name="Siddh Jain" />
+          <LeadSlate name="Krishna" />
+          <CoLeadSlate name="Nishchint Kamath" />
         </TitleCard>
         <TitleCard
           title="Event Management"
@@ -59,22 +55,30 @@ const page = () => {
           <CoLeadSlate name="Tushar Pandole" />
           <CoLeadSlate name="Imtiyaz Khan " />
         </TitleCard>
+        <TitleCard title="Security" theme={["#AAAAAA", "#FFFFFF", "#555555"]}>
+          <LeadSlate name="Yash Patidar" />
+          <CoLeadSlate name="Yash Natani" />
+        </TitleCard>
+        <TitleCard title="Web Dev" theme={["#90e0ef", "#00b4d8", "#0077b6"]}>
+          <LeadSlate name="Jayvardhan Patil" />
+          <CoLeadSlate name="Aryan Singh" />
+          <CoLeadSlate name="Kunal Sharma" />
+        </TitleCard>
+      </CardSection>
+      <CardSection start={1500} end={50}>
+        <TitleCard title="Marketing" theme={["#FD4556", "#BD3944", "#D62964"]}>
+          <LeadSlate name="Anjalika" />
+          <CoLeadSlate name="Vaibhav Taywade " />
+          <CoLeadSlate name="Akhil Daver" />
+          <CoLeadSlate name="Yeshwant " />
+          <CoLeadSlate name="Sankeerth Kankati" />
+        </TitleCard>
+
         <TitleCard title="Corporate" theme={["#ffbe0b", "#fb5607", "#fcbf49"]}>
           <LeadSlate name="Deepak Singh Chauhan " />
           <CoLeadSlate name="Vraj Talati" />
           <CoLeadSlate name="Harsh Bajaj" />
         </TitleCard>
-        <TitleCard
-          title="Special Mentions"
-          theme={["#0F971C", "#0F8019", "#0D3A11"]}
-        >
-          <LeadSlate name="Sahil Ballewar" title="Cultural Secretary" />
-          <LeadSlate name="Vishwa Dwivedi" title="Sports Secretary" />
-          <CoLeadSlate name="Divyanshu Singh" title="Cultural Coordinator" />
-          <CoLeadSlate name="Abhishek Panchal" title="Sports Coordinator" />
-        </TitleCard>
-      </CardSection>
-      <CardSection start={0} end={1570}>
         <TitleCard title="Content" theme={["#90e0ef", "#00b4d8", "#0077b6"]}>
           <LeadSlate name="Suyash Mahajan " />
           <CoLeadSlate name="Shreyash Suradkar" />
@@ -94,27 +98,11 @@ const page = () => {
         </TitleCard>
         <TitleCard
           title="Photography"
-          theme={["#FD4556", "#BD3944", "#D62964"]}
+          theme={["#AAAAAA", "#FFFFFF", "#555555"]}
         >
           <LeadSlate name="Anuj Jain" />
           <LeadSlate name="Vinay Badlani" />
           <CoLeadSlate name="Akshit Gangwar " />
-        </TitleCard>
-        <TitleCard
-          title="Hospitality"
-          theme={["#0F971C", "#0F8019", "#0D3A11"]}
-        >
-          <LeadSlate name="Siddh Jain" />
-          <LeadSlate name="Krishna" />
-          <CoLeadSlate name="Nishchint Kamath" />
-        </TitleCard>
-        <TitleCard
-          height="350px"
-          title="Security"
-          theme={["#AAAAAA", "#FFFFFF", "#555555"]}
-        >
-          <LeadSlate name="Yash Patidar" />
-          <CoLeadSlate name="Yash Natani" />
         </TitleCard>
       </CardSection>
     </motion.div>
