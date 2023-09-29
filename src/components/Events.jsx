@@ -42,13 +42,16 @@ const Events = () => {
       <div className="w-full">
         <Tag text="Events" icon={<HiArrowRight />} />
 
-        <div className="tracking-wider font-light text-2xl sm:text-3xl mt-16 w-[80%]  mb-16">
+        <div className="tracking-wider font-light text-1xl sm:text-2xl mt-16 w-[80%]  mb-16">
           <span className=" text-green-500">
-            Tantrafiesta hosts a plethora of social initiatives and outreach
-            programs
+            TantraFiesta Theme is “Genesis Unleashed: AI’s Dawn”, where the
+            future meets its genesis!
           </span>{" "}
-          such as hackathons, coding contests, robo-races, debates, and
-          seminars.
+          In a world constantly reshaped by technological innovation, artificial
+          intelligence (AI) stands as the catalyst of a new era. As students,
+          researchers, and tech enthusiasts, we are on the brink of an era where
+          AI is integral to our lives, bridging the gap between science fiction
+          and reality.
         </div>
       </div>
     </div>

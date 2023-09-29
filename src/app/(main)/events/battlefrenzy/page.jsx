@@ -7,22 +7,22 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Gen-A-Thon";
-  const organizer = "DotSlash";
-  const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "1000<br>123000<br>loser";
+  const title = "BattleFrenzy ";
+  const organizer = "TF Management";
+  const theme = ["#FD4556", "#BD3944", "#D62964"];
+  const rewards = "Rewards And Prizes<br>Winner-5,000";
   const data = [
-    ["Registration", "10 septe"],
-    ["round 1", " 23 oct"],
-    ["round2", "4 oct"],
-    ["result", " 1 dec"],
+    ["Registration", " 05 October"],
+    ["Knockouts", "08 October "],
   ];
+
   const url =
-    "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
+    "https://unstop.com/competitions/battlefrenzy-bgmi-tantrafiesta-23-iiit-nagpur-760522";
   const details =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Gear up for an exhilarating battle like no other in BattleFrenzy – BGMI edition! This turbocharged event invites you to dive into the battlegrounds of BGMI, where teamwork, strategy, and lightning-fast reflexes are your ultimate weapons.";
   const paragraph =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Drop into the battlegrounds of BGMI, but this time, it's a race on wheels! This gaming event combines the thrill of battle royale with the speed of car racing. Form squads, outmaneuver opponents and prove you're not just a gaming champ but also aracing prodigy. Prepare to embark on an epic gaming journey in BattleFrenzy – BGMI. It's time to show the world your skills in the heat of battle! ";
+
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">
       <div className=" w-[80vw] mt-28 flex flex-col items-center">
@@ -33,24 +33,12 @@ const page = () => {
           details={details}
           url={url}
         >
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-
-              transition: {
-                repeat: Infinity,
-                ease: "linear",
-                duration: 3,
-              },
-            }}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
-          >
-            <Image
-              src="/assets/banner/cf_banner.svg"
-              height={400}
-              width={400}
-            />
-          </motion.div>
+          <Image
+            className="absolute -scale-x-100 left-0 bottom-0  -z-50 opacity-90"
+            src="/assets/banner/bgmi_banner.svg"
+            height={400}
+            width={400}
+          />
         </Header>
         <EventData
           paragraph={paragraph}

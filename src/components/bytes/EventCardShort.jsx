@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import OrganiserBadge from "./OrganiserBadge";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 const EventCardShort = ({
   organizer,
   title,
@@ -67,31 +68,36 @@ const EventCardShort = ({
         height={80}
         width={80}
       />
-      <div className="eventCard-content p-2 relative">
-        <OrganiserBadge text={organizer} theme={theme[0]} />
-        <div
-          style={{
-            "--c1": `${theme[0]}`,
-            "--c2": `${theme[1]}`,
-            "--c3": `${theme[2]}`,
-          }}
-          className="transText transBg whitespace-nowrap overflow-hidden mt-4 mb-7 font-bold pb-1 text-4xl md:text-5xl z-10"
-        >
-          {title}
-        </div>
-        <div className="tracking-wider text-base sm:text-lg xl:text-xl opacity-50 w-full md:w-3/4">
-          {details}
+      <div className="eventCard-content p-2 relative flex flex-col justify-between">
+        <div>
+          <OrganiserBadge text={organizer} theme={theme[0]} />
+          <div
+            style={{
+              "--c1": `${theme[0]}`,
+              "--c2": `${theme[1]}`,
+              "--c3": `${theme[2]}`,
+            }}
+            className="transText transBg whitespace-nowrap overflow-hidden mt-4 mb-7 font-bold pb-1 text-4xl md:text-5xl z-10"
+          >
+            {title}
+          </div>
+          <div className="tracking-wider text-base sm:text-lg xl:text-xl opacity-50 w-full ">
+            {details}
+          </div>
         </div>
         <Link href={url} target="_blank">
-          <div
+          <motion.div
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
             style={{
               backgroundColor: `${theme[1]}`,
               color: `${textColor ? textColor : "white"}`,
             }}
-            className="group mt-8 font-bold cursor-pointer text-2xl w-[150px] h-[50px] flex justify-center items-center rounded-3xl"
+            className="group mt-8 font-bold cursor-pointer text-2xl w-[150px] h-[50px] flex justify-center items-center rounded-xl"
           >
             <p>Learn More</p>
-          </div>
+          </motion.div>
         </Link>
       </div>
     </div>

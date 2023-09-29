@@ -7,22 +7,16 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Gen-A-Thon";
-  const organizer = "DotSlash";
-  const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "1000<br>123000<br>loser";
-  const data = [
-    ["Registration", "10 septe"],
-    ["round 1", " 23 oct"],
-    ["round2", "4 oct"],
-    ["result", " 1 dec"],
-  ];
-  const url =
-    "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
+  const title = "Quiz Showdown";
+  const organizer = "TF Management";
+  const theme = ["#ffbe0b", "#fb5607", "#fcbf49"];
+  const rewards = "Revealing Soon";
+  const data = [["Revealing Soon", ""]];
+  const url = "";
   const details =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Prepare for a mind-boggling battle of wits in the Quiz Showdown – Quiz Showdown! This event is your ticket to an electrifying competition that will put your knowledge to the test.";
   const paragraph =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Shift into gear for Quiz Rally: Car Edition! Race against time to answer questions, earn points, and prove your automotive knowledge. It's a high-speed battle of wits, where speed and accuracy are your keys to success.Be ready to prove your knowledge prowess in the Quiz Showdown – Quiz Showdown. It's your chance to claim the title of the ultimate quiz champion!";
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">
       <div className=" w-[80vw] mt-28 flex flex-col items-center">
@@ -33,24 +27,12 @@ const page = () => {
           details={details}
           url={url}
         >
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-
-              transition: {
-                repeat: Infinity,
-                ease: "linear",
-                duration: 3,
-              },
-            }}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
-          >
-            <Image
-              src="/assets/banner/cf_banner.svg"
-              height={400}
-              width={400}
-            />
-          </motion.div>
+          <Image
+            className="absolute left-0 bottom-0  -z-50 opacity-90"
+            src="/assets/banner/quiz_banner.svg"
+            height={400}
+            width={400}
+          />
         </Header>
         <EventData
           paragraph={paragraph}

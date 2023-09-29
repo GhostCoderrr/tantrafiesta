@@ -7,22 +7,18 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Gen-A-Thon";
-  const organizer = "DotSlash";
-  const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "1000<br>123000<br>loser";
-  const data = [
-    ["Registration", "10 septe"],
-    ["round 1", " 23 oct"],
-    ["round2", "4 oct"],
-    ["result", " 1 dec"],
-  ];
-  const url =
-    "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
+  const title = " VR Experience exhibition";
+  const organizer = "Dimensions";
+  const theme = ["#AAAAAA", "#FFFFFF", "#555555"];
+  const rewards = "Reveling Soon";
+  const data = [["Reveling Soon", ""]];
+
+  const url = "";
   const details =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Dive headfirst into the future of technology at the VR Experience Exhibition! Immerse yourself in a captivating world of virtual reality as you explore an array of cutting-edge VR experiences .";
   const paragraph =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "DIMENSIONS is planning to host a VR experience booth, offering a first-hand experience to viewers and enthusiasts, introducing them to VR experiences through VR games available on SteamVR and scientific VR experiences. From thrilling VR games available on SteamVR to mind-blowing scientific VR experiences, this exhibition is a gateway to a new dimension of entertainment and discovery. Don't miss this opportunity to be at the forefront of the VR revolution! Don't miss this opportunity to be at the forefront of the VR revolution!";
+
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">
       <div className=" w-[80vw] mt-28 flex flex-col items-center">
@@ -33,24 +29,14 @@ const page = () => {
           details={details}
           url={url}
         >
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-
-              transition: {
-                repeat: Infinity,
-                ease: "linear",
-                duration: 3,
-              },
-            }}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
-          >
+          <div className="w-full flex justify-center">
             <Image
-              src="/assets/banner/cf_banner.svg"
-              height={400}
-              width={400}
+              className="absolute bottom-0 -z-50 opacity-90"
+              src="/assets/banner/vr_banner.svg"
+              height={450}
+              width={450}
             />
-          </motion.div>
+          </div>
         </Header>
         <EventData
           paragraph={paragraph}

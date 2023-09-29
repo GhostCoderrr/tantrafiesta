@@ -1,10 +1,10 @@
-const TitleCard = ({ title, theme, children }) => {
+const TitleCard = ({ title, theme, children, height }) => {
   return (
     <div
       style={{
         "--gradientBefore": `${theme[1]}33`,
         "--gradientAfter": `${theme[1]}aa`,
-        height: "450px",
+        height: height ? height : "450px",
       }}
       className="eventCard   text-black"
     >

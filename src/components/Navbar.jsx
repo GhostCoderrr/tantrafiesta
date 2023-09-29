@@ -15,10 +15,10 @@ const Navbar = () => {
         <TbSquareRotatedFilled className="hidden lg:block opacity-50" />
 
         <a
-          href="/#about"
+          href="/team"
           className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100"
         >
-          ABOUT
+          TEAM
         </a>
 
         <TbSquareRotatedFilled className="hidden lg:block opacity-50" />

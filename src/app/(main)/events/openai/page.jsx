@@ -7,22 +7,16 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Gen-A-Thon";
-  const organizer = "DotSlash";
-  const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "1000<br>123000<br>loser";
-  const data = [
-    ["Registration", "10 septe"],
-    ["round 1", " 23 oct"],
-    ["round2", "4 oct"],
-    ["result", " 1 dec"],
-  ];
-  const url =
-    "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
+  const title = "OpenAI";
+  const organizer = " Probe";
+  const theme = ["#0F971C", "#0F8019", "#0D3A11"];
+  const rewards = "Revealing Soon";
+  const data = [["Revealing Soon", ""]];
+  const url = "";
   const details =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Delve into the world of artificial intelligence at Probe – Open AI, a captivating event organized by the Probe Club and a highlight of TantraFiesta 2023. ";
   const paragraph =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    'This event offers an exciting opportunity to explore the vast realm of AI, discover its potential, and engage with cutting-edge technology. Prepare to embark on an extraordinary artistic odyssey unlike any other! Welcome to the "OpenAI Image - Probe" competition, where participants will fuse their boundless creative ingenuity with the astounding power of AI technology. This unique endeavour invites you to conjure captivating images that breathe life into the enigmatic theme soon to be unveiled. Harnessing the bleeding-edge capabilities of Open AI, you\'ll be granted the ability to transcend traditional artistic boundaries.Prepare to be spellbound as you redefine the very essence of creativity and embark on an enthralling journey into the unknown!';
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">
       <div className=" w-[80vw] mt-28 flex flex-col items-center">
@@ -33,24 +27,12 @@ const page = () => {
           details={details}
           url={url}
         >
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-
-              transition: {
-                repeat: Infinity,
-                ease: "linear",
-                duration: 3,
-              },
-            }}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
-          >
-            <Image
-              src="/assets/banner/cf_banner.svg"
-              height={400}
-              width={400}
-            />
-          </motion.div>
+          <Image
+            className="absolute lg:left-20 bottom-0  -z-50 opacity-90"
+            src="/assets/banner/openai_banner.svg"
+            height={300}
+            width={300}
+          />
         </Header>
         <EventData
           paragraph={paragraph}

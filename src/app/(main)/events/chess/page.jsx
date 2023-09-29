@@ -7,22 +7,23 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Gen-A-Thon";
-  const organizer = "DotSlash";
-  const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "1000<br>123000<br>loser";
+  const title = " Satranj-Up";
+  const organizer = "TF Management";
+  const theme = ["#AAAAAA", "#FFFFFF", "#555555"];
+  const rewards =
+    "Rewards And Prizes<br>Winner-5,000<br>Participation Certificate-Prize in kind";
   const data = [
-    ["Registration", "10 septe"],
-    ["round 1", " 23 oct"],
-    ["round2", "4 oct"],
-    ["result", " 1 dec"],
+    ["Registration", " 06 October"],
+    ["Round 1", "09 October "],
+    ["Round 2", "10 October "],
   ];
   const url =
-    "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
+    "https://unstop.com/events/the-shatranj-up-tantrafiesta-23-iiit-nagpur-760540";
   const details =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Prepare to ignite your strategic genius in The Shatranj-Up – Chess! This event offers a fresh perspective on the classic game of chess, inviting you to revamp your chessboard and step into the Chess Grand Showdown.";
   const paragraph =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Rev up your chessboard and enter the Chess Grand Prix:  Turbo Edition! This high- octane twist on the classic game adds a car-themed strategy. Plan your moves like a seasoned race car driver, accelerate your attacks, and leave your opponents in the dust on the chessboard. Channel your inner grandmaster as you meticulously plan your moves, outwitting your opponents with cunning strategy and flawless execution.The Shatranj-Up – Chess is your opportunity to make your mark on the chessboard of champions!";
+
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">
       <div className=" w-[80vw] mt-28 flex flex-col items-center">
@@ -33,24 +34,12 @@ const page = () => {
           details={details}
           url={url}
         >
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-
-              transition: {
-                repeat: Infinity,
-                ease: "linear",
-                duration: 3,
-              },
-            }}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
-          >
-            <Image
-              src="/assets/banner/cf_banner.svg"
-              height={400}
-              width={400}
-            />
-          </motion.div>
+          <Image
+            className="absolute lg:left-16 bottom-0  -z-50 opacity-90"
+            src="/assets/banner/chess_banner.png"
+            height={450}
+            width={450}
+          />
         </Header>
         <EventData
           paragraph={paragraph}

@@ -92,9 +92,12 @@ const About = () => {
         <div className="text-5xl sm:text-7xl font-semibold mt-16 mb-10">
           TantraFiest is
         </div>
-        <div className="tracking-wider font-light text-xl sm:text-3xl  w-[80%] opacity-50 mb-16">
-          the annual science and technology festival of the Indian Institute of
-          Information Technology, Nagpur.
+        <div className="tracking-wider font-light text-xl sm:text-2xl  w-[80%] opacity-50 mb-16">
+          the flagship annual technical extravaganza proudly presented by the
+          Indian Institute of Information Technology Nagpur (IIITN). With a rich
+          tradition of promoting research, problem-solving skills, and fostering
+          a sense of community among tech enthusiasts, Tantra Fiesta has evolved
+          into a premier event on the tech calendar.
         </div>
         <Link href="/events">
           <motion.div

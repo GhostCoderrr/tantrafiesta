@@ -84,9 +84,9 @@ const RoboRumble = ({ theme }) => {
               RoboRumble
             </div>
             <div className="tracking-wider text-xl opacity-50">
-              Hey geeks, here we are to take you to the next level of
-              competitive programming. Presenting you the most awaited
-              RoboRumble 2023.
+              Get ready for a robotic showdown like no other at IOTICS – Robo
+              Rumble! Immerse yourself in the thrilling world of robotics as you
+              experience the high-octane action of Robo Rumble.
             </div>
           </div>
           <Link href="/events/roborumble" target="_blank">

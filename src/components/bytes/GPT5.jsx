@@ -92,8 +92,9 @@ const GPT5 = ({ theme }) => {
               GPT 3.5 Solve-A-Thon
             </div>
             <div className="tracking-wider text-xl opacity-50">
-              A Hackathon using Gen- AI : ChatGPT to create solutions for the
-              new world.
+              Prepare to embark on a journey into the future with the GPT 3.5
+              Solve-A-Thon, a groundbreaking event that harnesses the power of
+              coding and API synergy.
             </div>
           </div>
           <Link href="/events/gpt3" target="_blank">

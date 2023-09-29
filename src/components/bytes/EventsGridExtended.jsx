@@ -89,7 +89,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="Dimensions"
             title="Blender Blitz"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta."
+            details="Step into the mesmerizing world of CG Animation and let your creativity soar! It's a canvas for you to showcase your artistic skills like never before."
             theme={["#90e0ef", "#00b4d8", "#0077b6"]}
             logo="/assets/logo/dimensions_logo.svg"
             textColor="#000000"
@@ -99,8 +99,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="IoTics"
             title="Byte Craft"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Unlock the future of technology at IOTICS – ByteCraft!  ByteCraft challenges you to integrate hardware and software using the latest advancements in AI and IoT technologies"
             theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/iotics_logo.svg"
             textColor="#000000"
@@ -112,8 +111,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="Orator"
             title="Rendezvous"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Uncover the journalist within you and embark on a journey of discovery in Reporter’s Rendezvous – Journalism Competition! This event is your platform to foster insightful questioning "
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
             logo="/assets/logo/orator_logo.svg"
             url="/events/rendezvous"
@@ -121,8 +119,7 @@ const EventsGridExtended = () => {
           <EventCardTall
             organizer="CRISPR"
             title="Enigma Xplore"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Calling all tech geeks and cybersecurity enthusiasts to join Probe – EnigmaXplore, a thrilling Jeopardy-style cybersecurity competition that will put your skills to the test!"
             banner="/assets/banner/ctf_banner.svg"
             theme={["#FD4556", "#BD3944", "#D62964"]}
             url="/events/enigma"
@@ -131,8 +128,7 @@ const EventsGridExtended = () => {
           <EventCardTall
             organizer="Strokes"
             title="Designathon"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Unleash your creativity and dive into the world of design at Strokes – Design-A-Thon! This electrifying design hackathon invites you to channel your inner artist and let your imagination run wild."
             banner="/assets/banner/designathon_banner.svg"
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
             url="/events/designathon"
@@ -140,8 +136,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="TF Management"
             title="Shatranj-Up"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Prepare to ignite your strategic genius in The Shatranj-Up – Chess! This event offers a fresh perspective on the classic game of chess."
             theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/tf_logo.svg"
             textColor="#000000"
@@ -152,8 +147,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="TF Management"
             title="Spell Bee"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Sharpen your linguistic skills and embrace the challenge in Verbum Magisterium – Spell Bee Challenge! This school event takes the traditional spelling bee to a whole new level."
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
             logo="/assets/logo/tf_logo.svg"
             url="/events/spellbee"
@@ -170,8 +164,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="TF Management"
             title="BattleFrenzy"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Gear up for an exhilarating battle like no other in BattleFrenzy – BGMI edition! This turbocharged event invites you to dive into the battlegrounds of BGMI."
             theme={["#FD4556", "#BD3944", "#D62964"]}
             logo="/assets/logo/tf_logo.svg"
             url="/events/battlefrenzy"
@@ -180,8 +173,7 @@ const EventsGridExtended = () => {
           <EventCardTall
             organizer="TF Management"
             title="Treasure Hunt"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Prepare for an adrenaline-fueled adventure like no other in the Treasure Hunt – Thrilling Treasure Hunt! Get ready to embark on a heart-pounding journey filled with mystery and excitement."
             banner="/assets/banner/th_banner.png"
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
             url="/events/treasurehunt"
@@ -189,8 +181,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="Probe"
             title="OpenAI"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Delve into the world of artificial intelligence at Probe – Open AI, a captivating event organized by the Probe Club and a highlight of TantraFiesta 2023. "
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
             logo="/assets/logo/probe_logo.svg"
             url="/events/openai"
@@ -198,8 +189,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="Probe"
             title="Photography"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Celebrate the art of photography at Probe – Photography Competition, an event that welcomes enthusiasts and professionals alike to showcase their creative interpretations through the lens. "
             theme={["#90e0ef", "#00b4d8", "#0077b6"]}
             textColor="#000000"
             logo="/assets/logo/probe_logo.svg"
@@ -209,8 +199,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="Probe"
             title="Reel Making"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Embark on a cinematic journey in the Reel Making Competition at Probe! This event invites you to step into the world of filmmaking and capture unforgettable moments from the event. "
             theme={["#FD4556", "#BD3944", "#D62964"]}
             logo="/assets/logo/probe_logo.svg"
             url="/events/reel"
@@ -218,8 +207,7 @@ const EventsGridExtended = () => {
           <EventCardTall
             organizer="Dimensions"
             title="VR Exhibition"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Dive headfirst into the future of technology at the VR Experience Exhibition! Immerse yourself in a captivating world of virtual reality as you explore an array of cutting-edge VR experiences. "
             banner="/assets/banner/vr_banner.svg"
             theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             textColor="#000000"
@@ -228,8 +216,7 @@ const EventsGridExtended = () => {
           <EventCardShort
             organizer="TF Management"
             title="Quiz Showdown"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
-"
+            details="Prepare for a mind-boggling battle of wits in the Quiz Showdown – Quiz Showdown! This event is your ticket to an electrifying competition that will put your knowledge to the test."
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
             logo="/assets/logo/tf_logo.svg"
             url="/events/quiz"

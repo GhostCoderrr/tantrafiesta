@@ -7,22 +7,28 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Gen-A-Thon";
-  const organizer = "DotSlash";
-  const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "1000<br>123000<br>loser";
+  const title = " Gen-A-Thon";
+  const organizer = "Elevate";
+  const theme = ["#7b1fa2", "#673ab7", "#f48fb1"];
+  const rewards =
+    "Rewards And Prizes<br>Winner-30,000<br>Round 1 Qualifier-Merit Certificate<br>Participation Certificate-Prize in kind";
   const data = [
-    ["Registration", "10 septe"],
-    ["round 1", " 23 oct"],
-    ["round2", "4 oct"],
-    ["result", " 1 dec"],
+    ["Registration", " 24 September"],
+    ["Round 1", "24 September"],
+    ["Round 1 Result", "24 September"],
+    ["Round 2 Statement", "24 September"],
+    ["Round 2 Submission", "28 September"],
+    ["Result", "30 September"],
+    ["Grand Final Starts", "13 October"],
+    ["Grand Final Ends", "14 October"],
   ];
   const url =
     "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
   const details =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Designed to test their tech, creativity and innovation. Join GEN-A-THON to be part of this exhilarating journey into the future of tech.";
   const paragraph =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Welcome to the heart-pounding, mind-bending, and creativity-igniting centerpiece of TantraFiesta 2023: GEN-A-THON! Prepare to be immersed in an electrifying 24-hour marathon of innovation, coding, and tech wizardry, where participants will embark on a journey to develop groundbreaking products at the intersection of Artificial Intelligence (AI), Machine Learning (ML), and Web-App Development. Participants will face a unique challenge";
+
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">
       <div className=" w-[80vw] mt-28 flex flex-col items-center">
@@ -33,24 +39,14 @@ const page = () => {
           details={details}
           url={url}
         >
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-
-              transition: {
-                repeat: Infinity,
-                ease: "linear",
-                duration: 3,
-              },
-            }}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
-          >
+          <div className=" bg-transparent absolute left-10 h-full  flex flex-col justify-center">
             <Image
-              src="/assets/banner/cf_banner.svg"
-              height={400}
-              width={400}
+              className=" -scale-x-100"
+              src="/assets/banner/genathon_banner.svg"
+              height={390}
+              width={390}
             />
-          </motion.div>
+          </div>
         </Header>
         <EventData
           paragraph={paragraph}

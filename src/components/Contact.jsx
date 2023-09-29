@@ -54,7 +54,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-[90vw] mx-8 lg:w-[75vw] border border-white/20 bg-transparent  rounded-3xl p-4 flex flex-col justify-center items-center">
+    <div
+      id="contact"
+      className="w-[90vw] mx-8 lg:w-[75vw] border border-white/20 bg-transparent  rounded-3xl p-4 flex flex-col justify-center items-center"
+    >
       <motion.div
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}

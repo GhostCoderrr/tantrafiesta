@@ -7,22 +7,22 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Gen-A-Thon";
-  const organizer = "DotSlash";
-  const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "1000<br>123000<br>loser";
+  const title = "EnigmaXplore";
+  const organizer = "CRISPR";
+  const theme = ["#FD4556", "#BD3944", "#D62964"];
+  const rewards =
+    "Rewards And Prizes<br>Winner-20,000<br> Participation Certificate-Prize in kind";
   const data = [
-    ["Registration", "10 septe"],
-    ["round 1", " 23 oct"],
-    ["round2", "4 oct"],
-    ["result", " 1 dec"],
+    ["Registration", " 01 October"],
+    ["Online Round Start", "13 October"],
+    ["Online Round Ends", "14 October"],
   ];
   const url =
-    "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
+    "https://unstop.com/hackathons/engimaxplore-ctf-tantrafiesta-23-iiit-nagpur-765077";
   const details =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Calling all tech geeks and cybersecurity enthusiasts to join Probe – EnigmaXplore, a thrilling Jeopardy-style cybersecurity competition that will put your skills to the test!";
   const paragraph =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "EnigmaXplore unlike others is a Jeopardy style, cyber security competition. It is an opportunity for Tech geeks to show their skill in various areas of computing and real-life security challenges. It’s a 24-hour online live time event, having challenges from different categories like Reverse Engineering, Binary Exploitation, Forensics, Web Exploitation, cryptography etc. It's not just a competition; it's a chance to showcase your cybersecurity prowess. Don't miss the opportunity to participate in Probe –EnigmaXplore and prove your mettle in the world of cybersecurity!";
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">
       <div className=" w-[80vw] mt-28 flex flex-col items-center">
@@ -33,24 +33,14 @@ const page = () => {
           details={details}
           url={url}
         >
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-
-              transition: {
-                repeat: Infinity,
-                ease: "linear",
-                duration: 3,
-              },
-            }}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
-          >
+          <div className="w-full flex justify-center">
             <Image
-              src="/assets/banner/cf_banner.svg"
-              height={400}
-              width={400}
+              className="absolute bottom-0 -z-50 opacity-90"
+              src="/assets/banner/ctf_banner.svg"
+              height={450}
+              width={450}
             />
-          </motion.div>
+          </div>
         </Header>
         <EventData
           paragraph={paragraph}

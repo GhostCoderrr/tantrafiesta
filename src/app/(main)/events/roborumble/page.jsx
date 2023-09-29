@@ -7,22 +7,25 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Gen-A-Thon";
-  const organizer = "DotSlash";
-  const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "1000<br>123000<br>loser";
+  const title = "Robo Rumble";
+  const organizer = "IoTics";
+  const theme = ["#7b1fa2", "#673ab7", "#f48fb1"];
+  const rewards =
+    "Rewards And Prizes<br>Winner-20,000<br>Runnner up-10,000<br>Participation Certificate-Prize in kind";
   const data = [
-    ["Registration", "10 septe"],
-    ["round 1", " 23 oct"],
-    ["round2", "4 oct"],
-    ["result", " 1 dec"],
+    ["Registration", " 29 September"],
+    ["Preliminary Round Starts", "7 September "],
+    ["Preliminary Round Ends", "29 September "],
+    ["Round 1", "14 October"],
+    ["Round 2", "14 October"],
   ];
   const url =
-    "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
+    "https://unstop.com/competitions/robo-rumble-tantrafiesta-23-iiit-nagpur-760991";
   const details =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Get ready for a robotic showdown like no other at IOTICS – Robo Rumble! Immerse yourself in the thrilling world of robotics as you experience the high-octane action of Robo Rumble. ";
   const paragraph =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Robotic cars will take center stage, navigating challenging obstacles and engaging in an epic Tug of War battle that will leave you on the edge of your seat. Robo Rumble, a highlight of TantraFiesta 2k23 organized by the IoTics Club, offers an exhilarating experience .This captivating spectacle promises attendees an adrenaline-fueled experience as they bear witness to robotic cars surging down the track, masterfully navigating a challenging array of obstacles. Prepare to be astounded as robotic contenders engage in an intense Tug of War, leaving spectators awestruck Every moment in this electrifying event will resonate with the mechanical symphony of the R-cars.";
+
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">
       <div className=" w-[80vw] mt-28 flex flex-col items-center">
@@ -33,24 +36,13 @@ const page = () => {
           details={details}
           url={url}
         >
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-
-              transition: {
-                repeat: Infinity,
-                ease: "linear",
-                duration: 3,
-              },
-            }}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
-          >
+          <div className=" bg-transparent h-full w-full flex flex-col justify-center">
             <Image
-              src="/assets/banner/cf_banner.svg"
-              height={400}
-              width={400}
+              src="/assets/banner/robo_banner.svg"
+              height={570}
+              width={570}
             />
-          </motion.div>
+          </div>
         </Header>
         <EventData
           paragraph={paragraph}

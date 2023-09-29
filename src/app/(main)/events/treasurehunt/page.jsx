@@ -7,22 +7,16 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Gen-A-Thon";
-  const organizer = "DotSlash";
-  const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "1000<br>123000<br>loser";
-  const data = [
-    ["Registration", "10 septe"],
-    ["round 1", " 23 oct"],
-    ["round2", "4 oct"],
-    ["result", " 1 dec"],
-  ];
-  const url =
-    "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
+  const title = "Treasure Hunt";
+  const organizer = "TF Management";
+  const theme = ["#ffbe0b", "#fb5607", "#fcbf49"];
+  const rewards = "Revealing Soon";
+  const data = [["Revealing Soon", ""]];
+  const url = "";
   const details =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    "Prepare for an adrenaline-fueled adventure like no other in the Treasure Hunt – Thrilling Treasure Hunt! ";
   const paragraph =
-    "Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.Hey geeks, here we are to take you to the next level of competitive programming. Presenting you the most awaited CodeFiesta 2023.";
+    " Get ready to embark on a heart-pounding journey filled with mystery and excitement. In this thrilling event, participants will follow a trail of intriguing clues that will lead them to hidden treasures. It's a race against time and wits as you decipher riddles, solve puzzles, and unravel the secrets of the hunt. Prepare for a turbocharged adventure in the Treasure Hunt! Follow the car-themed clues, unlock hidden treasures, and navigate the course like a seasoned racer. Will you be the first to cross the finish line and claim the ultimate prize? It's your chance to prove your mettle and claim the ultimate prize!";
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">
       <div className=" w-[80vw] mt-28 flex flex-col items-center">
@@ -33,24 +27,12 @@ const page = () => {
           details={details}
           url={url}
         >
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-
-              transition: {
-                repeat: Infinity,
-                ease: "linear",
-                duration: 3,
-              },
-            }}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
-          >
-            <Image
-              src="/assets/banner/cf_banner.svg"
-              height={400}
-              width={400}
-            />
-          </motion.div>
+          <Image
+            className="absolute bottom-0 -z-50 opacity-90"
+            src="/assets/banner/th_banner.png"
+            height={400}
+            width={400}
+          />
         </Header>
         <EventData
           paragraph={paragraph}

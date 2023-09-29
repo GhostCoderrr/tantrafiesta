@@ -11,14 +11,25 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="w-screen h-[300px] p-8 flex flex-col md:flex-row justify-around md:justify-between items-center bg-black text-white">
-      <div className="w-full md:w-1/2 flex justify-center md:justify-start items-center">
-        <Image src="/assets/logo.png" height={75} width={75} alt="" />
-        <div className=" font-black text-4xl cursor-pointer ml-6">
-          <Link href="/">
-            <Image src="/assets/logoText.png" height={300} width={300} alt="" />
-          </Link>
+      <div className="w-full md:w-1/2 h-full flex flex-col justify-center">
+        <div className="w-full h-1/2   flex justify-center md:justify-start items-center">
+          <Image src="/assets/logo.png" height={75} width={75} alt="" />
+          <div className=" font-black text-4xl cursor-pointer ml-6">
+            <Link href="/">
+              <Image
+                src="/assets/logoText.png"
+                height={300}
+                width={300}
+                alt=""
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="flex items-center text-">
+          <Image src="/assets/logo/iiitn_logo.svg" height={150} width={400} />
         </div>
       </div>
+
       <div className="w-full md:w-1/4 flex justify-around md:justify-around text-4xl items-center">
         <a
           className="hover:text-pink-400"
