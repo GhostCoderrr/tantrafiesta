@@ -35,7 +35,12 @@ const page = () => {
         </div>
       </div>
 
-      <CardSection start={0} end={1550}>
+      <CardSection start={1500} end={50}>
+        <TitleCard title="Web Dev" theme={["#90e0ef", "#00b4d8", "#0077b6"]}>
+          <LeadSlate name="Jayvardhan Patil" />
+          <CoLeadSlate name="Aryan Singh" />
+          <CoLeadSlate name="Kunal Sharma" />
+        </TitleCard>
         <TitleCard title="Marketing" theme={["#AAAAAA", "#FFFFFF", "#555555"]}>
           <LeadSlate name="Anjalika" />
           <CoLeadSlate name="Vaibhav Taywade " />
@@ -59,21 +64,26 @@ const page = () => {
           <CoLeadSlate name="Vraj Talati" />
           <CoLeadSlate name="Harsh Bajaj" />
         </TitleCard>
-        <TitleCard title="Web Dev" theme={["#90e0ef", "#00b4d8", "#0077b6"]}>
-          <LeadSlate name="Jayvardhan Patil" />
-          <CoLeadSlate name="Aryan Singh" />
-          <CoLeadSlate name="Kunal Sharma" />
+        <TitleCard
+          title="Special Mentions"
+          theme={["#0F971C", "#0F8019", "#0D3A11"]}
+        >
+          <LeadSlate name="Sahil Ballewar" title="Cultural Secretary" />
+          <LeadSlate name="Vishwa Dwivedi" title="Sports Secretary" />
+          <CoLeadSlate name="Divyanshu Singh" title="Cultural Coordinator" />
+          <CoLeadSlate name="Abhishek Panchal" title="Sports Coordinator" />
         </TitleCard>
       </CardSection>
-      <CardSection start={1100} end={0}>
-        <TitleCard title="Content" theme={["#FD4556", "#BD3944", "#D62964"]}>
+      <CardSection start={0} end={1570}>
+        <TitleCard title="Content" theme={["#90e0ef", "#00b4d8", "#0077b6"]}>
           <LeadSlate name="Suyash Mahajan " />
           <CoLeadSlate name="Shreyash Suradkar" />
           <CoLeadSlate name="Jignesh Patil " />
           <CoLeadSlate name="Hemant" />
         </TitleCard>
         <TitleCard title="Design" theme={["#7b1fa2", "#673ab7", "#f48fb1"]}>
-          <LeadSlate name="Piyush Waje" />
+          <LeadSlate name="Sumit Shee" />
+          <CoLeadSlate name="Piyush Waje" />
           <CoLeadSlate name="Anuj Kumar" />
         </TitleCard>
         <TitleCard title="Decor" theme={["#ffbe0b", "#fb5607", "#fcbf49"]}>
@@ -84,7 +94,7 @@ const page = () => {
         </TitleCard>
         <TitleCard
           title="Photography"
-          theme={["#90e0ef", "#00b4d8", "#0077b6"]}
+          theme={["#FD4556", "#BD3944", "#D62964"]}
         >
           <LeadSlate name="Anuj Jain" />
           <LeadSlate name="Vinay Badlani" />

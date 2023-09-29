@@ -76,7 +76,7 @@ const EventsGrid = () => {
         <div
           id="eventCards"
           ref={cardsRef}
-          className=" w-full  grid place-items-center md:place-items-start grid-cols-1 grid-rows-5 md:grid-cols-2 md:grid-rows-4 gap-4"
+          className="   w-full  grid place-items-center md:place-items-start grid-cols-1 md:grid-cols-2 md:grid-rows-4 gap-4"
         >
           <Algorithma theme={["#ffbe0b", "#fb5607", "#fcbf49"]} />
 
