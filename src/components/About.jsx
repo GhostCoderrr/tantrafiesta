@@ -148,6 +148,12 @@ const About = () => {
                 width={50}
               />
             </div>
+            <Image
+              className="ml-4 mt-3 lg:mt-0"
+              src="/assets/logo/wolfram_logo.svg"
+              height={100}
+              width={150}
+            />
           </div>
         </div>
       </div>

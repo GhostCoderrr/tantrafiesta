@@ -4,9 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import OrganiserBadge from "./OrganiserBadge";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import GPTGimmick from "../gimmicks/GPTGimmick";
 import Image from "next/image";
-const Innov = ({ theme }) => {
+const Workshop = ({ organizer, theme, details }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -56,37 +55,35 @@ const Innov = ({ theme }) => {
       className="eventCard col-span-1 md:col-span-2 w-3/4 md:w-full h-[800px] md:h-[400px] "
     >
       <div className="eventCard-content flex flex-col-reverse md:flex-row">
-        <div className="relative w-full mt-4 md:mt-0 md:w-1/2 pl-2 h-1/2 md:h-full ">
-          <div
-            style={{
-              "--rotateY": `${-rotation.x * 3}deg`,
-              "--rotateX": `${rotation.y * 3}deg`,
-            }}
-            className="  eventGimmick w-full mt-4 md:mt-0 md:w-1/2 pl-2 h-full md:h-full"
-          >
-            <motion.div
-              animate={{
-                y: [-10, 10, -10],
+        <div
+          style={{
+            "--rotateY": `${-rotation.x * 3}deg`,
+            "--rotateX": `${rotation.y * 3}deg`,
+          }}
+          className="eventGimmick w-full mt-4 md:mt-0 md:w-1/2 pl-2 h-full md:h-full "
+        >
+          <motion.div
+            animate={{
+              y: [-10, 10, -10],
 
-                transition: {
-                  repeat: Infinity,
-                  ease: "linear",
-                  duration: 3,
-                },
-              }}
-              className=" md:ml-[100px] bg-transparent h-full w-full flex flex-col justify-center"
-            >
-              <Image
-                src="/assets/banner/innov_banner.svg"
-                height={300}
-                width={400}
-              />
-            </motion.div>
-          </div>
+              transition: {
+                repeat: Infinity,
+                ease: "linear",
+                duration: 3,
+              },
+            }}
+            className=" bg-transparent h-full w-full flex flex-col justify-center"
+          >
+            <Image
+              src="/assets/banner/cf_banner.svg"
+              height={400}
+              width={400}
+            />
+          </motion.div>
         </div>
-        <div className="w-full h-1/2 md:h-full   md:w-1/2 flex flex-col justify-between">
+        <div className="w-full h-2/3 md:h-full   md:w-1/2 flex flex-col justify-between">
           <div className="">
-            <OrganiserBadge text="UDYAM" theme="#7b1fa2" />
+            <OrganiserBadge text={organizer} theme={theme[1]} />
             <div
               style={{
                 "--c1": `${theme[0]}`,
@@ -95,16 +92,12 @@ const Innov = ({ theme }) => {
               }}
               className="transText transBg  mt-4 mb-8 font-bold text-4xl md:text-6xl "
             >
-              Innovation Oasis
+              Workshop
             </div>
-            <div className="tracking-wider text-xl opacity-50">
-              Innovation Oasis is an event that fosters innovation and
-              collaboration, encouraging aspiring entrepreneurs to unleash their
-              creativity.
-            </div>
+            <div className="tracking-wider text-xl opacity-50">{details}</div>
           </div>
           <div className="flex md:flex-row flex-col justify-between items-center">
-            <Link href="/events/innov" target="_blank">
+            <Link href="/events/Workshop" target="_blank">
               <motion.div
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.1 }}
@@ -117,14 +110,14 @@ const Innov = ({ theme }) => {
                 Learn More
               </motion.div>
             </Link>
-            <Link href="https://www.geeksforgeeks.org/" target="_blank">
+            {/* <Link href="https://www.geeksforgeeks.org/" target="_blank">
               <Image
                 className="z-50 mb-4 ml-2 md:mr-10"
-                src="/assets/logo/tsecond_logo.svg"
+                src="/assets/logo/gfg_logo.svg"
                 height={25}
-                width={200}
+                width={250}
               />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
@@ -132,4 +125,4 @@ const Innov = ({ theme }) => {
   );
 };
 
-export default Innov;
+export default Workshop;

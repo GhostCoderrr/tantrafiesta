@@ -6,8 +6,9 @@ import EventCardShort from "./EventCardShort";
 import CodeFiesta from "./CodeFiesta";
 import Overdrive from "./Overdrive";
 import Algorithma from "./Algorithma";
+import EventCardTall from "./EventCardTall";
 import { useInView } from "framer-motion";
-
+import RoboRumble from "./RoboRumble";
 const EventsGrid = () => {
   const cardsRef = useRef(null);
   const divRef = useRef(null);
@@ -78,9 +79,17 @@ const EventsGrid = () => {
           ref={cardsRef}
           className="   w-full  grid place-items-center md:place-items-start grid-cols-1 md:grid-cols-2 md:grid-rows-4 gap-4"
         >
-          <Algorithma theme={["#ffbe0b", "#fb5607", "#fcbf49"]} />
+          <CodeFiesta theme={["#0F971C", "#0F8019", "#0D3A11"]} />
+          <EventCardTall
+            organizer="Dimensions"
+            title="Sentient Strife"
+            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
+"
+            banner="/assets/banner/game_jam_banner.svg"
+            theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
+            url="/events/sentient"
+          />
 
-          <Overdrive />
           <EventCardShort
             organizer="Dimensions"
             title="Blender Blitz"
@@ -89,6 +98,22 @@ const EventsGrid = () => {
             logo="/assets/logo/dimensions_logo.svg"
             textColor="#000000"
             url="/events/blender"
+          />
+          <EventCardTall
+            organizer="CRISPR"
+            title="Enigma Xplore"
+            details="Calling all tech geeks and cybersecurity enthusiasts to join Probe – EnigmaXplore, a thrilling Jeopardy-style cybersecurity competition that will put your skills to the test!"
+            banner="/assets/banner/ctf_banner.svg"
+            theme={["#FD4556", "#BD3944", "#D62964"]}
+            url="/events/enigma"
+          />
+          <EventCardTall
+            organizer="Strokes"
+            title="Designathon"
+            details="Unleash your creativity and dive into the world of design at Strokes – Design-A-Thon! This electrifying design hackathon invites you to channel your inner artist and let your imagination run wild."
+            banner="/assets/banner/designathon_banner.svg"
+            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            url="/events/designathon"
           />
 
           <EventCardShort
@@ -100,7 +125,7 @@ const EventsGrid = () => {
             textColor="#000000"
             url="/events/byte"
           />
-          <CodeFiesta theme={["#0F971C", "#0F8019", "#0D3A11"]} />
+          <RoboRumble theme={["#7b1fa2", "#673ab7", "#f48fb1"]} />
         </div>
       </div>
     </div>

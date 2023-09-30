@@ -4,7 +4,10 @@ import Events from "@/components/Events";
 import FindMore from "@/components/FindMore";
 import EventsGrid from "@/components/bytes/EventsGrid";
 import Speakers from "@/components/Speakers";
-
+import RoboRumble from "@/components/bytes/RoboRumble";
+import CodeFiesta from "@/components/bytes/CodeFiesta";
+import EventCardTall from "@/components/bytes/EventCardLong";
+import EventCardShort from "@/components/bytes/EventCardShort";
 import Venue from "@/components/Venue";
 import Contact from "@/components/Contact";
 
@@ -15,7 +18,7 @@ export default function Home() {
       <About />
       <Events />
 
-      <EventsGrid />
+      <EventsGrid></EventsGrid>
       <FindMore />
       <Speakers />
       <Venue />

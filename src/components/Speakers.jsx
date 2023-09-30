@@ -7,6 +7,7 @@ import SpeakersGrid from "./SpeakersGrid";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { FaRegStar } from "react-icons/fa";
+import Workshop from "./bytes/Workshop";
 const Speakers = () => {
   const divRef = useRef(null);
   const isInView = useInView(divRef);
@@ -54,8 +55,26 @@ const Speakers = () => {
       </div>
       <div className="w-full">
         <Tag text="Speakers" icon={<HiArrowRight />} />
-
+        <div className="text-3xl md:text-6xl font-semibold mt-6">
+          Meet Our Special Guests
+        </div>
+        <div className="mt-6 tracking-wider font-light text-base md:text-2xl opacity-60">
+          Get technical insights on whats latest in the industry !
+        </div>
         <SpeakersGrid />
+        <div id="workshops"></div>
+        <Tag text="Workshops" />
+
+        <div
+          id="eventCards"
+          className=" mt-8   w-full  grid place-items-center md:place-items-start grid-cols-1 md:grid-cols-2 md:grid-rows-1 gap-4"
+        >
+          <Workshop
+            organizer="Company"
+            theme={["#0F971C", "#0F8019", "#0D3A11"]}
+            details=""
+          />
+        </div>
       </div>
     </div>
   );

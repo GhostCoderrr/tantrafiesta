@@ -1,6 +1,6 @@
 "use client";
 import Tag from "./bytes/Tag";
-import { HiArrowRight } from "react-icons/hi";
+
 import { motion } from "framer-motion";
 import { MdOutlineEmojiEvents } from "react-icons/md";
 import { useInView } from "framer-motion";
@@ -40,18 +40,18 @@ const Events = () => {
         </div>
       </div>
       <div className="w-full">
-        <Tag text="Events" icon={<HiArrowRight />} />
+        <Tag text="Highlights" />
 
-        <div className="tracking-wider font-light text-1xl sm:text-2xl mt-16 w-[80%]  mb-16">
-          <span className=" text-green-500">
-            TantraFiesta Theme is “Genesis Unleashed: AI’s Dawn”, where the
-            future meets its genesis!
-          </span>{" "}
-          In a world constantly reshaped by technological innovation, artificial
-          intelligence (AI) stands as the catalyst of a new era. As students,
-          researchers, and tech enthusiasts, we are on the brink of an era where
-          AI is integral to our lives, bridging the gap between science fiction
-          and reality.
+        <div className="tracking-wider font-light text-1xl sm:text-2xl mt-8 w-[80%]  mb-16">
+          <div className="text-6xl font-semibold">Genisis Unleashed:</div>
+          <div className="text-4xl mb-4">AI's Dawn</div>
+          <div className="opacity-60">
+            where the future meets its genesis! In a world constantly reshaped
+            by technological innovation, artificial intelligence stands as the
+            catalyst of a new era. As students, researchers, and tech
+            enthusiasts, we are on the brink of an era where AI is integral to
+            our lives, bridging the gap between science fiction and reality.
+          </div>
         </div>
       </div>
     </div>

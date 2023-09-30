@@ -131,7 +131,7 @@ body {
 
 .card-content {
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -141,12 +141,12 @@ body {
   );
   background-position: 50% 50%;
   background-size: 1.1rem 1.1rem;
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 1.25rem;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
 }
-.card-content > h3 {
+.card-content > div > h3 {
   color: var(--primary-color);
 }
 

@@ -62,7 +62,7 @@ const Contact = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setOpen(true)}
-        className="text-6xl my-5 cursor-help"
+        className="text-6xl my-16 cursor-help"
       >
         Queries?
       </motion.div>
@@ -71,9 +71,9 @@ const Contact = () => {
         <motion.div
           initial={{ height: "0%" }}
           animate={open ? { height: "100%", opacity: 1 } : { opacity: 0 }}
-          className="codeBlock w-3/4 min-h-[500px]  relative flex flex-col justify-center items-center "
+          className="codeBlock w-3/4 min-h-[700px]  relative flex flex-col justify-center items-center "
         >
-          <div className="code w-full mx-2 border border-white/20 bg-[#151515] h-[600px]  relative  rounded-xl">
+          <div className="code w-full mx-2 border border-white/20 bg-[#151515] h-[750px]  relative  rounded-xl">
             <div className="absolute font-light font-mono  p-4 top-0 left-0 h-full w-full text-base md:text-xl">
               {submitted && (
                 <>
