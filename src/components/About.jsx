@@ -121,7 +121,7 @@ const About = () => {
                 width={100}
               />
               <Image
-                className="ml-0 lg:ml-4"
+                className="ml-4 lg:ml-4"
                 src="/assets/logo/ninjas_logo.png"
                 height={50}
                 width={120}
