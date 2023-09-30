@@ -17,7 +17,7 @@ const CardSection = ({ children, start, end }) => {
         top: end,
         behavior: "smooth",
       });
-    }, 5000);
+    }, 10000);
   }, []);
 
   useEffect(() => {

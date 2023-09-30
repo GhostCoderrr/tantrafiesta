@@ -24,7 +24,7 @@ const page = () => {
   const details =
     "Get ready for a robotic showdown like no other at IOTICS – Robo Rumble! Immerse yourself in the thrilling world of robotics as you experience the high-octane action of Robo Rumble. ";
   const paragraph =
-    "Robotic cars will take center stage, navigating challenging obstacles and engaging in an epic Tug of War battle that will leave you on the edge of your seat. Robo Rumble, a highlight of TantraFiesta 2k23 organized by the IoTics Club, offers an exhilarating experience .This captivating spectacle promises attendees an adrenaline-fueled experience as they bear witness to robotic cars surging down the track, masterfully navigating a challenging array of obstacles. Prepare to be astounded as robotic contenders engage in an intense Tug of War, leaving spectators awestruck Every moment in this electrifying event will resonate with the mechanical symphony of the R-cars.";
+    "Robotic cars will take center stage, navigating challenging obstacles and engaging in an epic Tug of War battle that will leave you on the edge of your seat. Robo Rumble, a highlight of TantraFiesta 2k23 organized by the IoTics Club, offers an exhilarating experience. This captivating spectacle promises attendees an adrenaline-fueled experience as they bear witness to robotic cars surging down the track, masterfully navigating a challenging array of obstacles. Prepare to be astounded as robotic contenders engage in an intense Tug of War, leaving spectators awestruck. Every moment in this electrifying event will resonate with the mechanical symphony of the R-cars.";
 
   return (
     <div className="flex min-h-screen w-screen flex-col items-center justify-between bg-black text-white">

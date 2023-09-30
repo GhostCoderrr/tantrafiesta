@@ -18,7 +18,7 @@ const SpeakersGrid = () => {
 
       <SpeakerCard
         name="Rajeev Kapoor"
-        details="Head at TATA Advanced Systems"
+        details="Associate Vice President, Head COE at TATA Advanced Systems"
         image="/assets/speakers/rajeev_kapoor.jpg"
         link="https://www.linkedin.com/in/rajeev-kapoor-ba209935/"
       />

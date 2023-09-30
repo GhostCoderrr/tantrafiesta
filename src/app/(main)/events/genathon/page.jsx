@@ -11,7 +11,7 @@ const page = () => {
   const organizer = "Elevate";
   const theme = ["#7b1fa2", "#673ab7", "#f48fb1"];
   const rewards =
-    "Rewards And Prizes<br>Winner-30,000<br>Round 1 Qualifier-Merit Certificate<br>Participation Certificate-Prize in kind";
+    "Rewards And Prizes<br>Prize Pool-₹30,000<br>Participation Certificates-Prize in kind";
   const data = [
     ["Registration", " 24 September"],
     ["Round 1", "24 September"],
@@ -38,6 +38,9 @@ const page = () => {
           organizer={organizer}
           details={details}
           url={url}
+          sponsor="/assets/logo/koed_logo.svg"
+          sponsor_url="https://www.koed.in/"
+          width={75}
         >
           <div className=" bg-transparent absolute left-10 h-full  flex flex-col justify-center">
             <Image

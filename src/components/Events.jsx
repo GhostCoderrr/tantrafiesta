@@ -43,7 +43,7 @@ const Events = () => {
         <Tag text="Highlights" />
 
         <div className="tracking-wider font-light text-1xl sm:text-2xl mt-8 w-[80%]  mb-16">
-          <div className="text-6xl font-semibold">Genisis Unleashed:</div>
+          <div className="text-6xl font-semibold">Genesis Unleashed:</div>
           <div className="text-4xl mb-4">AI&apos;s Dawn</div>
           <div className="opacity-60">
             where the future meets its genesis! In a world constantly reshaped

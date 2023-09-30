@@ -5,7 +5,7 @@ const CoLeadSlate = ({ title, name, phone }) => {
         {title ? title : "Co-Lead"}
       </div>
       <div className="text-2xl  ">{name}</div>
-      <div className="text-xs opacity-50">{phone}</div>
+      <div className="text-base opacity-80">{phone}</div>
     </div>
   );
 };

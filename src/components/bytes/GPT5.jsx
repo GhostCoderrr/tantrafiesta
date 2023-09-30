@@ -80,18 +80,18 @@ const GPT5 = ({ theme }) => {
         </div>
         <div className="w-full z-50 h-1/2 md:h-full   md:w-1/2 flex flex-col justify-between">
           <div className="">
-            <OrganiserBadge text="CRISPER" theme="#7b1fa2" />
+            <OrganiserBadge text="CRISPR" theme="#7b1fa2" />
             <div
               style={{
                 "--c1": `${theme[0]}`,
                 "--c2": `${theme[1]}`,
                 "--c3": `${theme[2]}`,
               }}
-              className="transText transBg  mt-4 mb-8 font-bold text-4xl md:text-6xl "
+              className="transText transBg  mt-4 mb-4 font-bold text-4xl md:text-5xl xl:text-6xl "
             >
               GPT 3.5 Solve-A-Thon
             </div>
-            <div className="tracking-wider text-xl opacity-50">
+            <div className="tracking-wider text-base xl:text-xl opacity-50">
               Prepare to embark on a journey into the future with the GPT 3.5
               Solve-A-Thon, a groundbreaking event that harnesses the power of
               coding and API synergy.

@@ -11,9 +11,9 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="w-screen h-[600px] md:h-[200px] p-8 flex flex-col md:flex-row justify-around md:justify-between items-center bg-black text-white">
-        <div className="w-full md:w-1/3 h-1/3 md:h-full flex flex-col justify-center items-center md:items-start">
-          <Image src="/assets/logo/iiitn_logo.svg" height={200} width={500} />
+      <div className="w-screen h-[600px] md:h-[200px] px  -8 flex flex-col md:flex-row justify-around md:justify-between items-center bg-black text-white">
+        <div className="w-full md:w-1/3 h-1/3 md:h-full ml-4 flex flex-col justify-center items-center md:items-start">
+          <Image src="/assets/logo/iiitn_logo.svg" height={200} width={400} />
         </div>
         <div className="mt-[-25px]">
           Developed By :
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col w-full md:w-1/4">
           <div className="w-full h-1/2   flex  flex-col justify-center md:justify-start items-center md:items-end">
-            <div className="flex flex-col justify-center md:justify-start items-center">
+            <div className="flex flex-col mr-4 justify-center md:justify-start items-center">
               <Image src="/assets/logo.png" height={75} width={75} alt="" />
               <div className=" font-black text-4xl cursor-pointer ml-6">
                 <Link href="/">
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-1/2 mt-2 flex justify-around md:justify-end text-4xl items-center">
+      <div className="w-full h-1/2 mt-2 mb-4 flex justify-around md:justify-end text-4xl items-center">
         <a
           className="hover:text-pink-400"
           href="https://instagram.com/tantrafiesta"
@@ -63,7 +63,7 @@ const Footer = () => {
           <FaSquareFacebook />
         </a>
         <a
-          className="hover:text-blue-800 ml-4"
+          className="hover:text-blue-800 ml-4 mr-4"
           href="https://www.linkedin.com/company/tantrafiesta-iiitn/"
         >
           <FaLinkedin />

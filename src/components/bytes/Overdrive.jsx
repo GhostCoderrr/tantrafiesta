@@ -155,7 +155,7 @@ const Overdrive = () => {
                       alt="Creds"
                     />
                     <p className="ml-2 tracking-wider text-white">
-                      150 per team
+                      100 per team
                     </p>
                   </div>
                   <div className=" bottom-0 left-0 text-xs mb-2 flex">

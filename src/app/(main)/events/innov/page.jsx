@@ -10,8 +10,11 @@ const page = () => {
   const title = "Innovation Oasis";
   const organizer = "UDYAM";
   const theme = ["#7b1fa2", "#673ab7", "#f48fb1"];
-  const rewards = "Revealing Soon";
-  const data = [["Revealing Soon", ""]];
+  const rewards = "Prize Pool: ₹30,000";
+  const data = [
+    ["Round 1", "23rd September"],
+    ["Finals", "13th October"],
+  ];
   const url =
     "https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544";
   const details =
@@ -27,6 +30,8 @@ const page = () => {
           organizer={organizer}
           details={details}
           url={url}
+          sponsor="/assets/logo/tsecond_logo.svg"
+          sponsor_url="https://tsecond.us/"
         >
           <motion.div
             animate={{

@@ -14,6 +14,7 @@ const EventCardTall = ({
   banner,
   textColor,
   url,
+  sponsor,
 }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
@@ -83,20 +84,27 @@ const EventCardTall = ({
             <Gimmick />
           </div>
         </div>
-        <Link href={url} target="_blank">
-          <motion.div
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            style={{
-              backgroundColor: `${theme[1]}`,
-              color: `${textColor ? textColor : "white"}`,
-            }}
-            className=" w-[150px] text-center p-2 text-xl mt-[-200px] md:m-2 rounded-2xl "
-          >
-            Learn More
-          </motion.div>
-        </Link>
+        <div className="flex items-center justify-between w-full">
+          <Link href={url} target="_blank">
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              style={{
+                backgroundColor: `${theme[1]}`,
+                color: `${textColor ? textColor : "white"}`,
+              }}
+              className=" w-[150px] text-center p-2 text-xl mt-[-200px] md:m-2 rounded-2xl "
+            >
+              Learn More
+            </motion.div>
+          </Link>
+          {sponsor && (
+            <Link href="https://www.wolfram.com/">
+              <Image src={sponsor} height={50} width={200} />
+            </Link>
+          )}
+        </div>
         <div className="w-full flex justify-center">
           <Image
             className="absolute bottom-0 -z-50 opacity-90"

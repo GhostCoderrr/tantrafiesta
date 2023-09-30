@@ -81,9 +81,9 @@ const RoboRumble = ({ theme }) => {
               }}
               className="transText transBg  mt-4 mb-8 font-bold text-4xl md:text-6xl "
             >
-              RoboRumble
+              Robo Rumble
             </div>
-            <div className="tracking-wider text-xl opacity-50">
+            <div className="tracking-wider text-base xl:text-xl opacity-50">
               Get ready for a robotic showdown like no other at IOTICS – Robo
               Rumble! Immerse yourself in the thrilling world of robotics as you
               experience the high-octane action of Robo Rumble.
@@ -99,7 +99,7 @@ const RoboRumble = ({ theme }) => {
               }}
               className="w-[200px] h-[50px] mt-8 md:mt-0 mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
             >
-              Learn Now
+              Learn More
             </motion.div>
           </Link>
         </div>

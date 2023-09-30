@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { TbSquareRotatedFilled } from "react-icons/tb";
 import Image from "next/image";
 const Navbar = () => {
   return (
@@ -11,15 +10,13 @@ const Navbar = () => {
         >
           ABOUT
         </a>
-        <TbSquareRotatedFilled className="hidden lg:block opacity-50" />
+
         <a
           href="/events"
           className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100"
         >
           EVENTS
         </a>
-
-        <TbSquareRotatedFilled className="hidden lg:block opacity-50" />
 
         <a
           href="/#workshops"
@@ -28,11 +25,9 @@ const Navbar = () => {
           WORKSHOPS
         </a>
 
-        <TbSquareRotatedFilled className="hidden lg:block opacity-50" />
         <Link href="/">
           <Image src="/assets/logo/logo_nav.png" height={350} width={350} />
         </Link>
-        <TbSquareRotatedFilled className="hidden lg:block opacity-50" />
 
         <a
           href="/#speakers"
@@ -41,15 +36,12 @@ const Navbar = () => {
           SPEAKERS
         </a>
 
-        <TbSquareRotatedFilled className="hidden lg:block opacity-50" />
-
         <a
           href="/team"
           className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100"
         >
           TEAM
         </a>
-        <TbSquareRotatedFilled className="hidden lg:block opacity-50" />
         <a
           href="/#contact"
           className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100"

@@ -12,6 +12,7 @@ const page = () => {
   const theme = ["#FD4556", "#BD3944", "#D62964"];
   const rewards = "Rewards And Prizes<br>Winner-5,000";
   const data = [
+    ["Entry Fee", "₹100"],
     ["Registration", " 05 October"],
     ["Knockouts", "08 October "],
   ];

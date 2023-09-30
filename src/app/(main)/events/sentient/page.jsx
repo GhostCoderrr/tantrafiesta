@@ -7,11 +7,11 @@ import Image from "next/image";
 import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
-  const title = "Sentiment Strife";
+  const title = "Sentient Strife";
   const organizer = "Dimensions";
   const theme = ["#0F971C", "#0F8019", "#0D3A11"];
   const rewards =
-    "Rewards And Prizes<br>Winner-15,000<br>Runner Up-7000<br>Participation Certificate-Prize in kind";
+    "Rewards And Prizes<br>Winner-15,000<br>Runner Up-5000<br>Participation Certificates";
   const data = [
     ["Registration", "27 September"],
     ["Round 1", "10 September "],

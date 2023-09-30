@@ -117,7 +117,7 @@ const CodeFiesta = ({ theme }) => {
             <Link href="https://www.geeksforgeeks.org/" target="_blank">
               <Image
                 className="z-50 mb-4 ml-2 md:mr-10"
-                src="/assets/logo/gfg_logo.svg"
+                src="/assets/logo/gfg_logo_extended.svg"
                 height={25}
                 width={250}
               />

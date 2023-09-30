@@ -10,7 +10,7 @@ const page = () => {
   const title = "Photography";
   const organizer = "Probe";
   const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
-  const rewards = "Revealing Soon";
+  const rewards = "Prize Pool: ₹5000";
   const data = [["Revealing Soon", ""]];
   const url = "";
   const details =

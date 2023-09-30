@@ -83,7 +83,7 @@ const EventsGrid = () => {
           <EventCardTall
             organizer="Dimensions"
             title="Sentient Strife"
-            details="Robo Rumble is an adrenaline-pumping experience of robo cars rumbling down the track. Join in on the sheer excitement of Robo Rumble at TantraFiesta.
+            details="This cutting-edge gaming event invites you to design epic boss battles centered around intense emotional conflicts.
 "
             banner="/assets/banner/game_jam_banner.svg"
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
@@ -102,15 +102,17 @@ const EventsGrid = () => {
           <EventCardTall
             organizer="CRISPR"
             title="Enigma Xplore"
-            details="Calling all tech geeks and cybersecurity enthusiasts to join Probe – EnigmaXplore, a thrilling Jeopardy-style cybersecurity competition that will put your skills to the test!"
+            details="Calling all tech geeks and cybersecurity enthusiasts to join EnigmaXplore, a thrilling Jeopardy-style cybersecurity competition that will put your skills to the test!"
             banner="/assets/banner/ctf_banner.svg"
             theme={["#FD4556", "#BD3944", "#D62964"]}
             url="/events/enigma"
+            sponsor="/assets/logo/wolfram_logo.svg"
+            sponsor_link="https://www.wolfram.com/"
           />
           <EventCardTall
             organizer="Strokes"
-            title="Designathon"
-            details="Unleash your creativity and dive into the world of design at Strokes – Design-A-Thon! This electrifying design hackathon invites you to channel your inner artist and let your imagination run wild."
+            title="Design-A-Thon"
+            details="Unleash your creativity and dive into the world of design at Strokes' – Design-A-Thon! This electrifying design hackathon invites you to channel your inner artist and let your imagination run wild."
             banner="/assets/banner/designathon_banner.svg"
             theme={["#0F971C", "#0F8019", "#0D3A11"]}
             url="/events/designathon"
@@ -119,7 +121,7 @@ const EventsGrid = () => {
           <EventCardShort
             organizer="IoTics"
             title="Byte Craft"
-            details="Unlock the future of technology at IOTICS – ByteCraft!  ByteCraft challenges you to integrate hardware and software using the latest advancements in AI and IoT technologies"
+            details="Unlock the future of technology at IOTICS – ByteCraft!  Byte Craft challenges you to integrate hardware and software using the latest advancements in AI and IoT technologies"
             theme={["#AAAAAA", "#FFFFFF", "#555555"]}
             logo="/assets/logo/iotics_logo.svg"
             textColor="#000000"

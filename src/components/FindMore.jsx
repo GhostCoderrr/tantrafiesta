@@ -770,7 +770,7 @@ const FindMore = () => {
         </div>
       </div>
       <div className="w-full z-10 pl-[50px] mb-32">
-        <div className="mt-[125px] max-w-[140px] h-[35px] cursor-pointer rounded-full border-[#A418BA] border text-[#A418BA] hover:border-white hover:bg-[#A418BA] hover:text-white  flex justify-center items-center">
+        <div className="mt-[125px] max-w-[140px] h-[35px] cursor-pointer rounded-full border-[#A418BA] border text-[#A418BA]  flex justify-center items-center">
           Interested ?
         </div>
         <Link href="/events">

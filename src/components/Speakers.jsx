@@ -8,6 +8,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { FaRegStar } from "react-icons/fa";
 import Workshop from "./bytes/Workshop";
+import Link from "next/link";
 const Speakers = () => {
   const divRef = useRef(null);
   const isInView = useInView(divRef);
@@ -54,7 +55,7 @@ const Speakers = () => {
         </div>
       </div>
       <div className="w-full">
-        <Tag text="Speakers" icon={<HiArrowRight />} />
+        <Tag text="Speakers" />
         <div className="text-3xl md:text-6xl font-semibold mt-6">
           Meet Our Special Guests
         </div>
@@ -70,10 +71,22 @@ const Speakers = () => {
           className=" mt-8   w-full  grid place-items-center md:place-items-start grid-cols-1 md:grid-cols-2 md:grid-rows-1 gap-4"
         >
           <Workshop
-            organizer="Company"
-            theme={["#0F971C", "#0F8019", "#0D3A11"]}
-            details=""
+            organizer="GameDevUtopia"
+            url="https://gamedevutopia.in/"
+            theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
           />
+        </div>
+        <div className="mt-16">
+          <Link href="/team">
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              className="w-[200px] h-[50px] sm:w-[300px] sm:h-[70px] mb-16 text-xl sm:text-4xl rounded-xl flex justify-center  items-center bg-[#BE30D5] cursor-pointer"
+            >
+              Meet The Team
+            </motion.div>
+          </Link>
         </div>
       </div>
     </div>

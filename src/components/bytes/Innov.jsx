@@ -117,7 +117,7 @@ const Innov = ({ theme }) => {
                 Learn More
               </motion.div>
             </Link>
-            <Link href="https://www.geeksforgeeks.org/" target="_blank">
+            <Link href="https://tsecond.us/" target="_blank">
               <Image
                 className="z-50 mb-4 ml-2 md:mr-10"
                 src="/assets/logo/tsecond_logo.svg"

@@ -68,21 +68,121 @@ const GenAThon = () => {
       className="eventCard col-span-1 md:col-span-2 w-3/4 md:w-full h-[800px] md:h-[400px]"
     >
       <div className="eventCard-content flex flex-col-reverse items-center md:flex-row-reverse">
-        <div
-          style={{
-            "--rotateY": `${-rotation.x * 3}deg`,
-            "--rotateX": `${rotation.y * 3}deg`,
-          }}
-          className="eventGimmick w-full mt-4 md:mt-0 md:w-1/2 pl-2 h-full md:h-full "
+        <motion.div
+          // drag={true}
+          // dragConstraints={{ top: 100, bottom: 100, left: 100, right: 100 }}
+          // dragSnapToOrigin={true}
+          className="codeBlock w-full md:w-1/2  h-full relative flex flex-col justify-center items-center"
         >
-          <div className=" bg-transparent absolute right-10 h-full  flex flex-col justify-center">
-            <Image
-              src="/assets/banner/genathon_banner.svg"
-              height={390}
-              width={390}
-            />
+          <div className="nav w-full border bg-[#101010] border-white/20 h-[10%] flex justify-between items-center px-2">
+            <div className="list text-xs sm:text-sm flex justify-around w-3/4 sm:w-1/2 z-10">
+              <button
+                type="button"
+                onClick={() => setTab(0)}
+                style={tab === 0 ? activeButtonStyle : null}
+                className="opacity-50"
+              >
+                Problems
+              </button>
+              <button
+                type="button"
+                onClick={() => setTab(1)}
+                style={tab === 1 ? activeButtonStyle : null}
+                className="opacity-50"
+              >
+                Terminal
+              </button>
+              <button
+                type="button"
+                onClick={() => setTab(2)}
+                style={tab === 2 ? activeButtonStyle : null}
+                className="opacity-50"
+              >
+                Output
+              </button>
+            </div>
+            <div className="flex w-[40px] justify-between">
+              <VscChromeMinimize
+                onClick={() => setMin(!min)}
+                className="opacity-50 hover:scale-110 cursor-pointer"
+              />
+              <VscChromeClose
+                onClick={() => setMin(!min)}
+                className="text-red-500 hover:scale-110 cursor-pointer"
+              />
+            </div>
           </div>
-        </div>
+
+          {!min && (
+            <div className="code w-full border-b border-x border-white/20 bg-[#151515] h-[90%] relative">
+              {tab == 0 && (
+                <div className="absolute leading-loose text-sm p-2 top-0 left-0 h-full w-full">
+                  <Typewriter
+                    options={{
+                      delay: 15,
+                      cursor: ".",
+                      cursorClassName: "custom_cursor",
+                    }}
+                    onInit={(typewriter) => {
+                      typewriter
+                        .pause(2500)
+                        .typeString(
+                          "<span style='opacity:0.3;font-size:10px;'>[13.10.23]</span> <span style='font-weight: bold;color:#79c0ff;'>Themes:</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#ff7b72;'>- 1.</span> HealthTech Innovation<br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#ffa657;'>- 2.</span> Smart City Solutions<br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span> <span style='font-weight: bold;color:#79c0ff;'>Tracks:</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#ff7b72;'>- 1.</span> AI-Driven Web Development<br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#ffa657;'>- 2.</span> ML-Enhanced App Development"
+                        )
+                        .callFunction(() => hideCursor())
+                        .start();
+                    }}
+                  />
+                </div>
+              )}
+              {tab == 1 && (
+                <div className="absolute leading-loose text-sm p-2 top-0 left-0 h-full w-full overflow-y-auto no-scrollbar">
+                  <Typewriter
+                    options={{
+                      delay: 15,
+                      cursor: ".",
+                      cursorClassName: "custom_cursor",
+                    }}
+                    onInit={(typewriter) => {
+                      typewriter
+
+                        .typeString(
+                          "<span style='opacity:0.3;font-size:10px;'>[13.10.23]</span> <span style='font-weight: bold;color:#7ee787;'>Registration Date:</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#ff7b72;'>- From</span> <span style='color:#ffa657;'>08-09-2023</span> <span style='color:#ff7b72;'>To</span> <span style='color:#ffa657;'>- 24-09-2023</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span> <span style='font-weight: bold;color:#7ee787;'>Round 1:</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#79c0ff;'>- 24 September, 2023 (4:00 PM - 5:00 PM)</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span> <span style='font-weight: bold;color:#7ee787;'>Round 1 Result:</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#79c0ff;'>- 24 September, 2023 (7:00 PM)</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span> <span style='font-weight: bold;color:#7ee787;'>Round 2:</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#79c0ff;'>- 24 September, 2023 (11:59 PM)</span> <span style='color:#ffa657;'>(Problem Statements will be given)</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span> <span style='font-weight: bold;color:#7ee787;'>Round 2 Submission:</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#79c0ff;'>- 28th September, 2023</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span> <span style='font-weight: bold;color:#7ee787;'>Round 2 Result:</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#79c0ff;'>- 30th September, 2023</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span> <span style='font-weight: bold;color:#ff7b72;'>Grand Finale:</span><br><span style='opacity:0.3;font-size:10px;'>[13.10.23]</span>   <span style='color:#ffa657;'>- 13th October, 2023</span> <span style='color:#ff7b72;'>and</span> <span style='color:#ffa657;'>14th October, 2023</span><br>"
+                        )
+                        .callFunction(() => hideCursor())
+                        .start();
+                    }}
+                  />
+                </div>
+              )}
+              {tab == 2 && (
+                <div className="absolute leading-loose text-sm p-2 top-0 left-0 h-full w-full">
+                  <Typewriter
+                    options={{
+                      delay: 15,
+                      cursor: ".",
+                      cursorClassName: "custom_cursor",
+                    }}
+                    onInit={(typewriter) => {
+                      typewriter
+
+                        .typeString(
+                          "<span style='opacity:0.3;font-size:10px;'>[14.10.23]</span> <span style='font-weight: bold;color:#7ee787;'>Prizes :</span><br><span style='opacity:0.3;font-size:10px;'>[14.10.23]</span>   <span style='color:#79c0ff;'>--   #1  </span><span style='color:#ff7b72;'>Rs. 30,000</span><br><span style='opacity:0.3;font-size:10px;'>[14.10.23]</span><br><span style='opacity:0.3;font-size:10px;'>[14.10.23]</span>"
+                        )
+                        .pauseFor(2000)
+                        .typeString(
+                          " <span style='color:#ffa657;'>-- Certificates of participation for all attendees</span>"
+                        )
+                        .callFunction(() => hideCursor())
+                        .start();
+                    }}
+                  />
+                </div>
+              )}
+            </div>
+          )}
+        </motion.div>
+
         <div className="w-full mt-4 md:mt-0 md:w-1/2 pl-2 h-full flex flex-col justify-between">
           <div>
             <OrganiserBadge text="Elevate" theme="#7b1fa2" />
@@ -112,7 +212,7 @@ const GenAThon = () => {
                 }}
                 className="w-[200px] h-[50px] mt-8 md:mt-0 mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
               >
-                Learn Now
+                Learn More
               </motion.div>
             </Link>
             <Link href="https://www.koed.in/" target="_blank">

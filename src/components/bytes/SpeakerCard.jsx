@@ -73,7 +73,7 @@ const SpeakerCard = ({ name, details, link, image }) => {
           className="text-3xl hover:text-blue-800 cursor-pointer flex items-center"
         >
           <FaLinkedin />
-          <p className="text-xl ml-2">{details}</p>
+          <p className="text-sm ml-2">{details}</p>
         </Link>
       </div>
     </div>

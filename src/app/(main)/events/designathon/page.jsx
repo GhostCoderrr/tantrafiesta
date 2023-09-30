@@ -11,8 +11,9 @@ const page = () => {
   const organizer = "Strokes";
   const theme = ["#0F971C", "#0F8019", "#0D3A11"];
   const rewards =
-    "Rewards And Prizes<br>Winner-16,000<br>Runnner up-9,000<br>Participation Certificate-Prize in kind";
+    "Rewards And Prizes<br>Winner-16,000<br>Runnner up-9,000<br>Participation Certificates";
   const data = [
+    ["Entry Fee", "Rs.500"],
     ["Registration", " 30 September"],
     ["Submission Round 1 Starts", "01 October"],
     ["Submission Round 1 Ends", "03 October"],

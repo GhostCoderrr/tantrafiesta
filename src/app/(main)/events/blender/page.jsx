@@ -8,10 +8,10 @@ import EventData from "@/components/eventBytes/EventData";
 import Contact from "@/components/Contact";
 const page = () => {
   const title = "Blender  Blitz";
-  const organizer = "Dimension";
+  const organizer = "Dimensions";
   const theme = ["#90e0ef", "#00b4d8", "#0077b6"];
   const rewards =
-    "Rewards And Prizes<br>Winner-7,500<br>Participation Certificate-Prize in kind";
+    "Rewards And Prizes<br>Winner-7,500<br>Participation Certificates";
   const data = [
     ["Registration Starts", "10 September"],
     ["Registration Ends", " 05 October"],

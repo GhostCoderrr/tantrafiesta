@@ -13,6 +13,7 @@ const EventCardShort = ({
   logo,
   textColor,
   url,
+  image,
 }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
@@ -68,7 +69,15 @@ const EventCardShort = ({
         height={80}
         width={80}
       />
-      <div className="eventCard-content p-2 relative flex flex-col justify-between">
+      <div className="eventCard-content p-2 relative flex flex-col justify-between overflow-hidden">
+        {image && (
+          <Image
+            className="absolute  -z-10 bottom-0 lg:right-10  opacity-20 "
+            src={image}
+            height={400}
+            width={400}
+          />
+        )}
         <div>
           <OrganiserBadge text={organizer} theme={theme[0]} />
           <div
@@ -77,11 +86,11 @@ const EventCardShort = ({
               "--c2": `${theme[1]}`,
               "--c3": `${theme[2]}`,
             }}
-            className="transText transBg whitespace-nowrap overflow-hidden mt-4 mb-7 font-bold pb-1 text-4xl md:text-5xl z-10"
+            className="transText transBg  overflow-hidden mt-4 mb-7 font-bold pb-1 text-4xl md:text-5xl z-10"
           >
             {title}
           </div>
-          <div className="tracking-wider text-base sm:text-lg xl:text-xl opacity-50 w-full ">
+          <div className="tracking-wider text-sm sm:text-base xl:text-xl opacity-50 w-full ">
             {details}
           </div>
         </div>

@@ -10,8 +10,11 @@ const page = () => {
   const title = "Treasure Hunt";
   const organizer = "TF Management";
   const theme = ["#ffbe0b", "#fb5607", "#fcbf49"];
-  const rewards = "Revealing Soon";
-  const data = [["Revealing Soon", ""]];
+  const rewards = "Prize Pool: ₹10,000";
+  const data = [
+    ["Entry Fee", "₹100 per team"],
+    ["Revealing Soon", ""],
+  ];
   const url = "";
   const details =
     "Prepare for an adrenaline-fueled adventure like no other in the Treasure Hunt – Thrilling Treasure Hunt! ";

@@ -10,7 +10,7 @@ const page = () => {
   const title = " Reel Making";
   const organizer = "Probe";
   const theme = ["#FD4556", "#BD3944", "#D62964"];
-  const rewards = "Revealing Soon";
+  const rewards = "Prize Pool: ₹5000";
   const data = [["Revealing Soon", ""]];
   const url = "";
   const details =

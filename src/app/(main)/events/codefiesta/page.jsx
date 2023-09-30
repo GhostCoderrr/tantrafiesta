@@ -10,9 +10,10 @@ const page = () => {
   const title = "Codefiesta";
   const organizer = "DotSlash ";
   const theme = ["#0F971C", "#0F8019", "#0D3A11"];
-  const rewards = "Revealing Soon";
-  const data = [["Revealing Soon", ""]];
-  const url = "";
+  const rewards =
+    "Prize Pool: Goodies such as Amazon Alexa and Noise Smartwatches from GFG";
+  const data = [["Contest on", "8th October at 9PM to 11PM"]];
+  const url = "https://bit.ly/Codefiesta2023";
   const details =
     "Gear up for a coding extravaganza at CodeFiesta! This thrilling competition invites you to showcase your competitive programming skills like never before. Whether you're a coding prodigy or a seasoned programmer, this is your chance to shine.";
   const paragraph =
@@ -27,6 +28,8 @@ const page = () => {
           organizer={organizer}
           details={details}
           url={url}
+          sponsor="/assets/logo/gfg_logo_extended.svg"
+          sponsor_url="https://www.geeksforgeeks.org/"
         >
           <motion.div
             animate={{

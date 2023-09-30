@@ -138,7 +138,7 @@ const Contact = () => {
                     typewriter
                       .pauseFor(2500)
                       .typeString(
-                        "Contact Nos. <br>+91 6377121184<br>+91 9307005165<br><br>Hello there!<br>I'll be taking your query<br><br>"
+                        "Contact Nos. <br>Saket Sanadhya: +91 6377121184<br>Soham Deshpande: +91 9307005165<br><br>Hello there!<br>I'll be taking your query<br><br>"
                       )
 
                       .pauseFor(1500)

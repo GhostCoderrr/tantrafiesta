@@ -11,7 +11,7 @@ const page = () => {
   const organizer = "IoTics";
   const theme = ["#AAAAAA", "#FFFFFF", "#555555"];
   const rewards =
-    "Rewards And Prizes<br>Winner-15,000 + Trophies<br>Runner Up-5,000 + Trophies<br>Participation Certificate-Prize in kind";
+    "Rewards And Prizes<br>Winner-15,000 + Trophies<br>Runner Up-5,000 + Trophies<br>Participation Certificates";
   const data = [
     ["Registration", " 25 September"],
     ["Online Round", "08 September"],

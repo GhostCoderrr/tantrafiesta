@@ -10,7 +10,7 @@ const page = () => {
   const title = "Quiz Showdown";
   const organizer = "TF Management";
   const theme = ["#ffbe0b", "#fb5607", "#fcbf49"];
-  const rewards = "Revealing Soon";
+  const rewards = "TantraFiesta Goodies";
   const data = [["Revealing Soon", ""]];
   const url = "";
   const details =

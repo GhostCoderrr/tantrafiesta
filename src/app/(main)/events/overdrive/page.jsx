@@ -11,7 +11,7 @@ const page = () => {
   const organizer = "TF Managment";
   const theme = ["#FD4556", "#BD3944", "#D62964"];
   const rewards =
-    "Rewards And Prizes<br>Winner-15,000<br>First Runner Up-Prize in kind<br>Participation Certificate-Prize in kind";
+    "Rewards And Prizes<br>Prize Pool-₹15,000<br>Participation Certificate-Prize in kind";
   const data = [
     ["Registration", " 06 October"],
     ["Knockouts start", "07 October "],

@@ -4,7 +4,18 @@ import { useState, useEffect, useRef } from "react";
 import OrganiserBadge from "../bytes/OrganiserBadge";
 import Link from "next/link";
 import { motion } from "framer-motion";
-const Header = ({ title, theme, children, details, organizer, url }) => {
+import Image from "next/image";
+const Header = ({
+  title,
+  theme,
+  children,
+  details,
+  organizer,
+  url,
+  sponsor,
+  sponsor_url,
+  width,
+}) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -97,6 +108,11 @@ const Header = ({ title, theme, children, details, organizer, url }) => {
                 Register Now
               </motion.div>
             </Link>
+            {sponsor && (
+              <Link href={sponsor_url}>
+                <Image src={sponsor} height={50} width={width ? width : 200} />
+              </Link>
+            )}
           </div>
         </div>
       </div>

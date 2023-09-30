@@ -13,6 +13,7 @@ const page = () => {
   const rewards =
     "Rewards And Prizes<br>Winner-5,000<br>Participation Certificate-Prize in kind";
   const data = [
+    ["Entry Fees", "₹30"],
     ["Registration", " 06 October"],
     ["Round 1", "09 October "],
     ["Round 2", "10 October "],
