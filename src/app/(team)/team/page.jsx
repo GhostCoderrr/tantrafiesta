@@ -105,12 +105,7 @@ const page = () => {
       </CardSection>
       <CardSection start={0} end={1570}>
         <TitleCard title="Marketing" theme={["#FD4556", "#BD3944", "#D62964"]}>
-          <Link
-            className=" col-span-2"
-            href="https://www.youtube.com/shorts/PNdhSmgzRuM"
-          >
-            <LeadSlate name="Anjalika" />
-          </Link>
+          <LeadSlate name="Anjalika" />
 
           <CoLeadSlate name="Vaibhav Taywade " />
           <CoLeadSlate name="Akhil Daver" />
