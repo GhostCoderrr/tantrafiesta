@@ -72,7 +72,7 @@ const Speakers = () => {
         >
           <Workshop
             organizer="GameDevUtopia"
-            url="https://gamedevutopia.in/"
+            url="https://www.linkedin.com/company/gamedevutopia/"
             theme={["#ffbe0b", "#fb5607", "#fcbf49"]}
           />
         </div>

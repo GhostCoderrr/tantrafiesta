@@ -152,7 +152,7 @@ const page = () => {
         </TitleCard>
         <TitleCard
           title="Organizers"
-          height="700px"
+          height="750px"
           theme={["#0F971C", "#0F8019", "#0D3A11"]}
         >
           <LeadSlate name="Rohan Udhwani" title="General Secretary" />
