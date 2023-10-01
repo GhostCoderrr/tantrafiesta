@@ -60,7 +60,7 @@ const page = () => {
           <CoLeadSlate name="Yash Natani" phone="+91 79873 86670" />
         </TitleCard>
       </CardSection>
-      <CardSection start={1620} end={500}>
+      <CardSection start={0} end={500}>
         <TitleCard title="Corporate" theme={["#ffbe0b", "#fb5607", "#fcbf49"]}>
           <Link
             className=" col-span-2"
