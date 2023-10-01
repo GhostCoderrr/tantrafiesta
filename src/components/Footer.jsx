@@ -35,39 +35,42 @@ const Footer = () => {
                   />
                 </Link>
               </div>
+              <div className="w-full h-1/2 mt-2 mb-4 flex justify-around md:justify-end text-4xl items-center">
+                <a
+                  className="hover:text-pink-400"
+                  href="https://instagram.com/tantrafiesta"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  className="hover:text-white ml-4"
+                  href="https://twitter.com/tf2k22"
+                >
+                  {" "}
+                  <FaXTwitter />
+                </a>
+                <a
+                  className="hover:text-red-700 ml-4"
+                  href="https://youtube.com/channel/UC7xty40bNXvYPw_nrOQPB1Q"
+                >
+                  <FaYoutube />
+                </a>
+                <a
+                  className="hover:text-blue-600 ml-4"
+                  href="https://www.facebook.com/iiitntantra/"
+                >
+                  <FaSquareFacebook />
+                </a>
+                <a
+                  className="hover:text-blue-800 ml-4 mr-4"
+                  href="https://www.linkedin.com/company/tantrafiesta-iiitn/"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="w-full h-1/2 mt-2 mb-4 flex justify-around md:justify-end text-4xl items-center">
-        <a
-          className="hover:text-pink-400"
-          href="https://instagram.com/tantrafiesta"
-        >
-          <FaInstagram />
-        </a>
-        <a className="hover:text-white ml-4" href="https://twitter.com/tf2k22">
-          {" "}
-          <FaXTwitter />
-        </a>
-        <a
-          className="hover:text-red-700 ml-4"
-          href="https://youtube.com/channel/UC7xty40bNXvYPw_nrOQPB1Q"
-        >
-          <FaYoutube />
-        </a>
-        <a
-          className="hover:text-blue-600 ml-4"
-          href="https://www.facebook.com/iiitntantra/"
-        >
-          <FaSquareFacebook />
-        </a>
-        <a
-          className="hover:text-blue-800 ml-4 mr-4"
-          href="https://www.linkedin.com/company/tantrafiesta-iiitn/"
-        >
-          <FaLinkedin />
-        </a>
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className="h-screen w-screen grid grid-cols-1 md:grid-cols-2 items-center">
+    <div className="h-screen w-screen grid bg-black grid-cols-1 md:grid-cols-2 items-center">
       <div className="text-6xl font-bold w-full grid place-items-center pt-24 md:pt-0">
         SPONSORS
       </div>

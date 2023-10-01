@@ -89,7 +89,7 @@ const About = () => {
           <Image src="/assets/logo/sbi_logo.svg" width={200} height={200} />
         </div> */}
         <Tag text="About" />
-        <div className="text-5xl sm:text-7xl font-semibold mt-16 mb-10">
+        <div className="text-4xl sm:text-7xl font-semibold mt-16 mb-10">
           TantraFiesta
         </div>
         <div className="tracking-wider font-light text-xl sm:text-2xl  w-[80%] opacity-50 mb-16">
@@ -108,7 +108,7 @@ const About = () => {
             Sponsors
           </Link>
           <div className="flex flex-col lg:flex-row  justify-start mt-3 items-start lg:items-center w-1/2">
-            <div className="grid w-[80vw] md:w-[50vw] xl:grid-cols-6  grid-cols-3 place-items-center auto-cols-max items-center ">
+            <div className="grid w-[50vw] md:w-[50vw] xl:grid-cols-6  grid-cols-3 place-items-center auto-cols-max items-center ">
               <Link href="https://www.ntpc.co.in/">
                 <Image
                   className="w-[75px]"

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
+import { FaInstagram, FaDiscord } from "react-icons/fa6";
 const Workshop = ({ organizer, theme, details, url }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
@@ -53,7 +54,7 @@ const Workshop = ({ organizer, theme, details, url }) => {
         "--gradientBefore": `${theme[0]}33`,
         "--gradientAfter": `${theme[0]}aa`,
       }}
-      className="eventCard col-span-1 md:col-span-2 w-3/4 md:w-full h-[800px] md:h-[400px] "
+      className="eventCard col-span-1 md:col-span-2 w-3/4 md:w-full h-[800px] md:h-[440px] "
     >
       <div className="eventCard-content flex flex-col-reverse md:flex-row">
         <div
@@ -65,18 +66,22 @@ const Workshop = ({ organizer, theme, details, url }) => {
         >
           <Link
             href={url}
-            className=" bg-transparent h-full w-full flex flex-col justify-center"
+            className=" md:ml-8 bg-transparent h-full w-full flex flex-col justify-center"
           >
             <Image
-              src="/assets/banner/gamedev_banner.svg"
-              height={470}
-              width={470}
+              className="rounded-xl "
+              src="/assets/banner/gamedev_banner.jpg"
+              height={380}
+              width={380}
             />
           </Link>
         </div>
-        <div className="w-full h-2/3 md:h-full   md:w-1/2 flex flex-col justify-between">
+        <div className="w-full z-10 h-2/3 md:h-full   md:w-1/2 flex flex-col justify-between">
           <div className="">
-            <OrganiserBadge text={organizer} theme={theme[1]} />
+            <Link href={url} target="_blank">
+              <OrganiserBadge text={organizer} theme={theme[1]} />
+            </Link>
+
             <div
               style={{
                 "--c1": `${theme[0]}`,
@@ -114,20 +119,30 @@ const Workshop = ({ organizer, theme, details, url }) => {
               />
             </div>
           </div>
-          <div className="flex md:flex-row flex-col justify-between items-center">
-            {/* <Link href="/events/Workshop" target="_blank">
+          <div className="flex flex-row  justify-start gap-2 items-center">
+            <Link
+              href="https://instagram.com/gamedevutopia?igshid=MmU2YjMzNjRlOQ=="
+              target="_blank"
+            >
               <motion.div
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                style={{
-                  backgroundColor: `${theme[0]}`,
-                }}
-                className="w-[200px] h-[50px] mt-8 md:mt-0 mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
+                className="w-[50px] hover:text-pink-400 h-[50px]  mb-4  text-4xl  rounded-xl flex justify-center  items-center cursor-pointer"
               >
-                Learn More
+                <FaInstagram />
               </motion.div>
-            </Link> */}
+            </Link>
+            <Link href="https://discord.gg/hbpSnBXtwq" target="_blank">
+              <motion.div
+                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className="w-[50px] hover:text-blue-600  h-[50px] mb-4  text-4xl  rounded-xl flex justify-center  items-center cursor-pointer"
+              >
+                <FaDiscord />
+              </motion.div>
+            </Link>
             {/* <Link href="https://www.geeksforgeeks.org/" target="_blank">
               <Image
                 className="z-50 mb-4 ml-2 md:mr-10"
