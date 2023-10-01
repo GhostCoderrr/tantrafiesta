@@ -24,7 +24,7 @@ const page = () => {
           theme={["#AAAAAA", "#FFFFFF", "#555555"]}
           height="700px"
         >
-          <LeadSlate name="Pranav " />
+          <LeadSlate name="Pranav Chandak" />
           <Link
             className=" col-span-2"
             href="https://www.youtube.com/watch?v=1s48dkikK54"
@@ -54,6 +54,7 @@ const page = () => {
           <LeadSlate name="Siddh Jain" phone="+91 72064 98895" />
           <LeadSlate name="Krishna" phone="+91 87882 68288" />
           <CoLeadSlate name="Nishchint Kamath" />
+          <CoLeadSlate name="Gaurav Bajpai" />
         </TitleCard>
         <TitleCard title="Security" theme={["#FD4556", "#BD3944", "#D62964"]}>
           <LeadSlate name="Yash Patidar" phone="+91 6376 540 711" />
