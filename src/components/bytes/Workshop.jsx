@@ -94,7 +94,7 @@ const Workshop = ({ organizer, theme, details, url }) => {
             </div>
             <div className="tracking-wider opacity-50 text-sm xl:text-base">
               Your gateway to the world of game development! Hosted by
-              GaneDevUtopia, on 13th October from 2-5 PM is perfect for aspiring
+              GameDevUtopia, on 13th October from 2-5 PM is perfect for aspiring
               game creators. Try your hand at practical exercises, & receive
               participation certificates. Plus, stand a chance to win cool
               LevelUp T-shirts. Grab your laptops and unlock your game
