@@ -30,6 +30,7 @@ const page = () => {
           organizer={organizer}
           details={details}
           url={url}
+          width={150}
           sponsor="/assets/logo/tsecond_logo.svg"
           sponsor_url="https://tsecond.us/"
         >

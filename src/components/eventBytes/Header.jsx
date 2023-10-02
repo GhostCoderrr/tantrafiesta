@@ -94,7 +94,7 @@ const Header = ({
               {details}
             </div>
           </div>
-          <div className="flex md:flex-row flex-col justify-between items-center">
+          <div className="flex md:flex-row flex-col md:mb-4 justify-between items-center">
             <Link href={url} target="_blank">
               <motion.div
                 whileTap={{ scale: 0.9 }}
@@ -103,7 +103,7 @@ const Header = ({
                 style={{
                   backgroundColor: `${theme[0]}`,
                 }}
-                className="w-[200px] h-[50px] mt-8 md:mt-0 mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
+                className="w-[200px] h-[50px] mt-8 md:mt-0 md:mb-0 mb-4  text-2xl  rounded-xl flex justify-center  items-center cursor-pointer"
               >
                 Register Now
               </motion.div>

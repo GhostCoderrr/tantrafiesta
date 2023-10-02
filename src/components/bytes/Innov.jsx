@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import OrganiserBadge from "./OrganiserBadge";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import GPTGimmick from "../gimmicks/GPTGimmick";
 import Image from "next/image";
 const Innov = ({ theme }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
@@ -122,7 +121,7 @@ const Innov = ({ theme }) => {
                 className="z-50 mb-4 ml-2 md:mr-10"
                 src="/assets/logo/tsecond_logo.svg"
                 height={25}
-                width={200}
+                width={150}
               />
             </Link>
           </div>
