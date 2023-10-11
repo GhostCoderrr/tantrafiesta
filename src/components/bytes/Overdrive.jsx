@@ -2,10 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import OrganiserBadge from "./OrganiserBadge";
-import GunsCanvas from "../GunsCanvas";
-import { Vandal } from "./Vandal";
-import { Classic } from "./Classic";
-import { Knife } from "./Knife";
+
 import { TbSquareRotatedFilled } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { Suspense } from "react";
@@ -62,7 +59,7 @@ const Overdrive = () => {
       className="eventCard w-3/4 md:w-full row-span-1 md:row-span-2 h-[800px] select-none"
     >
       <div className="eventCard-content flex relative">
-        <Suspense fallback={<Loading />}>
+        {/* <Suspense fallback={<Loading />}>
           <div
             className={`
         ${selection == 0 ? "md:block" : ""}
@@ -89,7 +86,7 @@ const Overdrive = () => {
           >
             <GunsCanvas item={<Vandal />} />
           </div>
-        </Suspense>
+        </Suspense> */}
         <div className="w-full pl-2 flex flex-col items-start ">
           <OrganiserBadge text="TF Management" theme="#BD3944" />
           <div
