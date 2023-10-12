@@ -15,7 +15,7 @@ const page = () => {
     ["Entry Fee", "₹100 per team"],
     ["Revealing Soon", ""],
   ];
-  const url = "";
+  const url = "https://forms.gle/qpSckC81qhF7fwSR7";
   const details =
     "Prepare for an adrenaline-fueled adventure like no other in the Treasure Hunt – Thrilling Treasure Hunt! ";
   const paragraph =
