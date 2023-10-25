@@ -7,6 +7,9 @@ const page = () => {
         SPONSORS
       </div>
       <div className="h-full flex flex-col  md:pt-28 pb-5 justify-between items-center md:items-start">
+        <Link href="https://www.appxbuild.com/">
+          <Image src="/assets/logo/appx_logo.jpeg" height={100} width={200} />
+        </Link>
         <Link href="https://www.ntpc.co.in/">
           <Image src="/assets/logo/ntpc_logo.png" height={50} width={150} />
         </Link>

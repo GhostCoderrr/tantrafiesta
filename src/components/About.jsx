@@ -109,6 +109,14 @@ const About = () => {
           </Link>
           <div className="flex flex-col lg:flex-row  justify-start mt-3 items-start lg:items-center w-1/2">
             <div className="grid w-[50vw] md:w-[50vw] xl:grid-cols-6  grid-cols-3 place-items-center auto-cols-max items-center ">
+              <Link href="https://www.appxbuild.com/">
+                <Image
+                  className="w-[100px]"
+                  src="/assets/logo/appx_logo.jpeg"
+                  height={100}
+                  width={100}
+                />
+              </Link>
               <Link href="https://www.ntpc.co.in/">
                 <Image
                   className="w-[75px]"

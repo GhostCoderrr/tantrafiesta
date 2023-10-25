@@ -215,12 +215,12 @@ const GenAThon = () => {
                 Learn More
               </motion.div>
             </Link>
-            <Link href="https://www.koed.in/" target="_blank">
+            <Link href="https://www.appxbuild.com/" target="_blank">
               <Image
                 className="z-50 mb-4 ml-2 md:mr-10"
-                src="/assets/logo/koed_logo.svg"
-                height={70}
-                width={70}
+                src="/assets/logo/appx_logo.jpeg"
+                height={200}
+                width={200}
               />
             </Link>
           </div>

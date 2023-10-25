@@ -38,9 +38,9 @@ const page = () => {
           organizer={organizer}
           details={details}
           url={url}
-          sponsor="/assets/logo/koed_logo.svg"
-          sponsor_url="https://www.koed.in/"
-          width={75}
+          sponsor="/assets/logo/appx_logo.jpeg"
+          sponsor_url="https://www.appxbuild.com/"
+          width={200}
         >
           <div className=" bg-transparent absolute left-10 h-full  flex flex-col justify-center">
             <Image
