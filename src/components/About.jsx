@@ -107,66 +107,117 @@ const About = () => {
           >
             Sponsors
           </Link>
-          <div className="flex flex-col lg:flex-row  justify-start mt-3 items-start lg:items-center w-1/2">
-            <div className="grid w-[50vw] md:w-[50vw] xl:grid-cols-6  grid-cols-3 place-items-center auto-cols-max items-center ">
-              <Link href="https://www.appxbuild.com/">
-                <Image
-                  className="w-[100px]"
-                  src="/assets/logo/appx_logo.jpeg"
-                  height={100}
-                  width={100}
-                />
-              </Link>
-              <Link href="https://www.ntpc.co.in/">
-                <Image
-                  className="w-[75px]"
-                  src="/assets/logo/ntpc_logo.png"
-                  height={50}
-                  width={75}
-                />
-              </Link>
-              <Link href="https://www.codingninjas.com/">
-                <Image
-                  className="w-[120px]"
-                  src="/assets/logo/ninjas_logo.png"
-                  height={50}
-                  width={200}
-                />
-              </Link>
+          <div className="flex flex-col   justify-start mt-3 items-start  w-1/2">
+            <div className="mt-3 ml-2">
+              Title Sponsor:
+              <Image
+                className="mt-2"
+                src="/assets/logo/yatra_logo.png"
+                width={150}
+                height={100}
+              />
+            </div>
+            <div className="mt-3 ml-2">
+              Co-Sponsor:
+              <Image
+                className="mt-2"
+                src="/assets/logo/sbi_logo.svg"
+                width={150}
+                height={100}
+              />
+            </div>
+            <div className="mt-3 ml-2">
+              Partners:
+              <div className="flex justify-between mt-2">
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/vivo_logo.png"
+                    fill={true}
+                  />
+                </div>
 
-              <Link href="https://www.geeksforgeeks.org/">
-                <Image
-                  className="w-[50px]"
-                  src="/assets/logo/gfg_logo.svg"
-                  height={40}
-                  width={50}
-                />
-              </Link>
-              <Link href="https://tsecond.us/">
-                <Image
-                  className="w-[100px]"
-                  src="/assets/logo/tsecond_logo.svg"
-                  height={50}
-                  width={100}
-                />
-              </Link>
-              <Link href="https://www.koed.in/">
-                <Image
-                  className="w-[50px]"
-                  src="/assets/logo/koed_logo.svg"
-                  height={50}
-                  width={50}
-                />
-              </Link>
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/ease_logo.png"
+                    fill={true}
+                  />
+                </div>
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/ntpc_logo.png"
+                    fill={true}
+                  />
+                </div>
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/ninjas_logo.png"
+                    fill={true}
+                  />
+                </div>
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/siuk_logo.png"
+                    fill={true}
+                  />
+                </div>
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/hcl_logo.png"
+                    fill={true}
+                  />
+                </div>
+              </div>
+              <div className="flex justify-between mt-2">
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/gfg_logo_extended.svg"
+                    fill={true}
+                  />
+                </div>
 
-              <Link href="https://www.wolfram.com/">
-                <Image
-                  className="w-[150px]"
-                  src="/assets/logo/wolfram_logo.svg"
-                  height={100}
-                  width={150}
-                />
-              </Link>
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/koed_logo.svg"
+                    fill={true}
+                  />
+                </div>
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/tcs_logo.png"
+                    fill={true}
+                  />
+                </div>
+                <div className="h-[50px] w-[120px] ml-2 relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/wolfram_logo.svg"
+                    fill={true}
+                  />
+                </div>
+                <div className="h-[50px] w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/appx_logo.jpeg"
+                    fill={true}
+                  />
+                </div>
+                <div className="h-[50px] ml-2 w-[120px] relative text-xs text-center flex flex-col justify-center items-center">
+                  <Image
+                    className=" object-scale-down"
+                    src="/assets/logo/tsecond_logo.svg"
+                    fill={true}
+                  />
+                </div>
+              </div>
             </div>
             {/* <div className="w-full  min-w-[300px] flex justify-start mt-3 items-center">
              
