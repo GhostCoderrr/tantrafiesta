@@ -167,7 +167,7 @@ const GenAThon = () => {
                       typewriter
 
                         .typeString(
-                          "<span style='opacity:0.3;font-size:10px;'>[14.10.23]</span> <span style='font-weight: bold;color:#7ee787;'>Prizes :</span><br><span style='opacity:0.3;font-size:10px;'>[14.10.23]</span>   <span style='color:#79c0ff;'>--   #1  </span><span style='color:#ff7b72;'>Rs. 30,000</span><br><span style='opacity:0.3;font-size:10px;'>[14.10.23]</span><br><span style='opacity:0.3;font-size:10px;'>[14.10.23]</span>"
+                          "<span style='opacity:0.3;font-size:10px;'>[14.10.23]</span> <span style='font-weight: bold;color:#7ee787;'>Prizes :</span><br><span style='opacity:0.3;font-size:10px;'>[14.10.23]</span>   <span style='color:#79c0ff;'>--   Prize Pool:   </span><span style='color:#ff7b72;'>Rs. 30,000</span><br><span style='opacity:0.3;font-size:10px;'>[14.10.23]</span><br><span style='opacity:0.3;font-size:10px;'>[14.10.23]</span>"
                         )
                         .pauseFor(2000)
                         .typeString(
